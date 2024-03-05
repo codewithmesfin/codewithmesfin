@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Typewriter__cursor{
+    color: black !important;
+}
