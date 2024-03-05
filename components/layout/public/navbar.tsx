@@ -86,9 +86,9 @@ export default function PublicNavbar() {
         </div>
       </nav>
 
-      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-        <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <Dialog as="div" className="lg:hidden " open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        <div className="inset-0 z-10" />
+        <Dialog.Panel className={`${isDarkMode?'bg-gray-800':'bg-white sm:ring-gray-900/10'} fixed  inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1`}>
           <div className="flex items-center justify-between">
             <div onClick={() => setMobileMenuOpen(false)}>
               <Brand />
@@ -96,7 +96,7 @@ export default function PublicNavbar() {
 
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-900"
+              className={`-m-2.5 rounded-md p-2.5 ${isDarkMode?'text-gray-100':'text-gray-900'}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -110,7 +110,7 @@ export default function PublicNavbar() {
                 {
                   links.map((item, i) => <Link onClick={() => setMobileMenuOpen(false)} key={i}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className={`${isDarkMode?'text-gray-200 hover:bg-gray-100':'text-gray-900 hover:bg-gray-50'} -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7`}
                   >
                     {item.title}
                   </Link>)

@@ -14,6 +14,15 @@ export default function App() {
         <div className='mx-auto max-w-[85%] '>
           <div className="md:flex md:spaxe-x-10 md:justify-evenly">
 
+          <div className='md:hidden mb-10 h-full w-full md:w-[30%] flex justify-center'>
+              <Image
+                data-aos="fade-up"
+                data-aos-duration="500"
+                src="/images/mesfine.png" alt='logo' width={400} height={400}
+                className='rounded object-cover h-full shadow-xl'
+              />
+            </div>
+
 
             <div className='w-full md:w-[50%] h-full'>
               <h1 className={`font-normal ${isDarkMode?'text-white':'text-gray-900'} text-3xl md:text-4xl`}>
