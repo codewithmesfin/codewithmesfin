@@ -54,7 +54,7 @@ export default function Me() {
 
     return (
         <div>
-            <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'} pt-32 pb-16`}>
+            <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'} py-32`}>
                 <div className='mx-auto max-w-[90%] '>
                     <div className="md:flex md:spaxe-x-10 md:items-center md:justify-evenly">
 

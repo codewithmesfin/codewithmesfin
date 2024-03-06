@@ -10,11 +10,11 @@ export default function App() {
 
   return (
     <div>
-      <section className={`${isDarkMode ?'bg-gray-700':'bg-white'} pt-32 pb-16`}>
+      <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'} pt-32 pb-16`}>
         <div className='mx-auto max-w-[85%] '>
           <div className="md:flex md:spaxe-x-10 md:justify-evenly">
 
-          <div className='md:hidden mb-10 h-full w-full md:w-[30%] flex justify-center'>
+            <div className='md:hidden mb-10 h-full w-full md:w-[30%] flex justify-center'>
               <Image
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -25,15 +25,15 @@ export default function App() {
 
 
             <div className='w-full md:w-[50%] h-full'>
-              <h1 className={`font-normal ${isDarkMode?'text-white':'text-gray-900'} text-3xl md:text-4xl`}>
+              <h1 className={`font-normal ${isDarkMode ? 'text-white' : 'text-gray-900'} text-3xl md:text-4xl`}>
                 Dive into Code,<span className='text-green-600 px-2'>{"Mesfin's"}</span>Guidance
               </h1>
-              <p className={`${isDarkMode?'text-gray-200':'text-gray-500'} pt-6 py-2`}>
+              <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-500'} pt-6 py-2`}>
                 You have been invited to an exciting voyage through the realm of coding.
                 With {"Mesfin's "} mentorship, {" you'll"} explore the depths of programming languages and frameworks, gaining
                 hands-on experience and insight along the way.
               </p>
-              <p className={`${isDarkMode?'text-gray-200':'text-gray-500'} py-2`}>
+              <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-500'} py-2`}>
                 Whether you are a beginner or looking to enhance your coding skills,
                 our interactive lessons, hands-on projects, and personalized support
                 from Mesfin himself will propel you into the fascinating realm of coding.
@@ -62,9 +62,9 @@ export default function App() {
         </div>
       </section>
 
-      <section className={`${isDarkMode?'bg-gray-800':'bg-gray-100'} py-6`}>
+      <section className={`${isDarkMode ? 'bg-gray-800' : 'bg-gray-100'} py-6`}>
         <div className='mx-auto max-w-[90%]'>
-          <p className={`${isDarkMode?'text-gray-200':'text-gray-500'} text-md`}>
+          <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-500'} text-md`}>
             Mesfin, a Software Engineer, delights in crafting innovative mobile
             and web systems loved by users. With expertise in AI, Web3.0, Agile,
             and frontend/backend development, Mesfin offers mentorship and a
@@ -73,16 +73,16 @@ export default function App() {
         </div>
       </section>
 
-      <section className={`${isDarkMode?'bg-gray-700':'bg-white'}`}>
+      <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'}`}>
         <div className='mx-auto max-w-[90%] py-16'>
           <div className="md:flex md:items-center md:space-x-10">
             <div data-aos="fade-up"
               data-aos-duration="600" className='w-full md:w-3/5'>
-              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode?'text-blue-400':'text-blue-600'}`}>
+              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>
                 Build a Successful Product
               </h1>
-              <p className={`${isDarkMode?'text-gray-200':'text-gray-500'} pt-4 py-2`}>
-                <span className={`font-semibold ${isDarkMode?'text-white':'text-gray-500'}`}>Are you building a new system, customizing an existing one,
+              <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-500'} pt-4 py-2`}>
+                <span className={`font-semibold ${isDarkMode ? 'text-white' : 'text-gray-500'}`}>Are you building a new system, customizing an existing one,
                   or upgrading to the latest version?</span> <br />
                 <span className='font-semibold'>{"Don't"} wait to reach out for professional advice and assistance,
                   no matter the challenge. </span> Expert guidance can help ensure your business
@@ -101,7 +101,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className={`${isDarkMode?'bg-gray-800':'bg-blue-100'}`}>
+      <section className={`${isDarkMode ? 'bg-gray-800' : 'bg-blue-100'}`}>
         <div className='mx-auto max-w-[90%] py-16'>
           <div className="md:flex md:items-center md:space-x-10">
             <div data-aos="fade-up"
@@ -112,11 +112,11 @@ export default function App() {
             </div>
             <div data-aos="fade-up"
               data-aos-duration="500" className='w-full md:w-4/6 py-10 md:py-1'>
-              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode?'text-blue-400':'text-blue-600'}`}>
+              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>
                 <span className='font-extrabold'>ERPNext</span> Guidance & Support
               </h1>
-              <p className={`${isDarkMode?'text-gray-300':'text-gray-500'} pt-4 py-2`}>
-                <span className={`font-semibold ${isDarkMode?'text-gray-200':'text-gray-500'}`}>
+              <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-500'} pt-4 py-2`}>
+                <span className={`font-semibold ${isDarkMode ? 'text-gray-200' : 'text-gray-500'}`}>
                   Is your business looking to
                   automate tasks and streamline operations?</span> <br />
                 ERPNext, a free and open-source ERP software, could be a perfect solution!
@@ -138,26 +138,29 @@ export default function App() {
         </div>
       </section>
 
-      <section className={`${isDarkMode?'bg-gray-700':'bg-white'}`}>
+      <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'}`}>
         <div className='mx-auto max-w-[90%] py-16'>
           <div className="md:flex md:items-center md:space-x-10">
             <div data-aos="fade-up"
               data-aos-duration="600" className='w-full md:w-3/5'>
-              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode?'text-blue-400':'text-blue-600'}`}>
-                Innovate, Create, Code - Code with Mesfin leads the way.
+              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>
+                Does <span className="font-extrabold">Agile</span> work for every project?
               </h1>
-              <p className={`${isDarkMode?'text-gray-300':'text-gray-500'} pt-4 py-2`}>
-                Struggling to bring your product to life smoothly? Agile methodologies
-                can help you deliver value faster and adapt to changing needs. With Agile,
-                {"you'll "} break down projects into manageable pieces, prioritize features
-                based on user feedback, and continuously improve. <span className="font-semibold">
-                  {'"Code with Mesfin" '}
+              <h2 className={`pt-3 ${isDarkMode ? 'text-gray-200' : 'text-gray-900'} `}>
+                What is the difference between
+                <span className={`px-1 italic font-semibold ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>
+                  {'delivering a product successfully and delivering a successful product?'}
                 </span>
-                specializes in crafting high-performing Agile teams, both remote and on-site.
-                {"Mesfin's"} expertise will guide you through building the right team structure,
-                implementing Agile practices, and ultimately, achieving successful product delivery.
-                {" Don't"} hesitate to reach out to Mesfin for mentorship and turn your product
-                vision into reality.
+                And which one is your choice?
+              </h2>
+              <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-500'} pt-4 py-2`}>
+                <span className="text-green-600">Code with Mesfin</span> will help you
+                setting up and running the right team and show you building a
+                successful product. Mesfin has an expertise in setting up a
+                successful Remote, and on-site team on agile basis. It is common to see
+                many startups or even companies build a product that nobody wants. <br />
+                <span className={`${isDarkMode ? 'text-gray-200' : 'text-gray-900'} `}>{"Don't"} wait to
+                  reach-out mesfin for mentorship!</span>
               </p>
               <GetStartedButton />
             </div>
@@ -172,23 +175,23 @@ export default function App() {
       </section>
 
 
-      <section className={`${isDarkMode?'bg-gray-800':'bg-blue-100'}`}>
+      <section className={`${isDarkMode ? 'bg-gray-800' : 'bg-blue-100'}`}>
         <div className='mx-auto max-w-[85%] py-16'>
           <div data-aos="fade-up"
 
             data-aos-duration="500" className="md:flex md:items-center md:space-x-10">
             <div className='w-full md:w-3/5'>
-              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode?'text-gray-100':'text-gray-900'}`}>
-                <span className='text-4xl md:text-8xl text-blue-600 font-extrabold'> 24</span> Hours Support
+              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode ? 'text-gray-100' : 'text-gray-900'}`}>
+                <span className='text-4xl md:text-8xl text-blue-600 font-extrabold'>18</span> Hours Availablity
               </h1>
-              <p className={`${isDarkMode?'text-gray-300':'text-gray-600'} pt-4 py-2`}>
-                We provide round-the-clock support for 2lifi, ensuring assistance is
-                available whenever you need it. Our support options include both
-                AI-based, and personal support, tailored to suit your preferences
-                and requirements. Whether you prefer automated solutions or direct
-                assistance from our team, {"we're"} here to help you maximize the
-                benefits of our Enterprise system at any time of the day.
-                We assure <span className="font-bold">100%</span> the availabily of your system.
+              <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} pt-4 py-2`}>
+                Mesfin brings extensive experience working across various locations and time zones.
+                He is highly engaged in continuous learning, actively applying his knowledge
+                through practice, research, and coding. Mesfin also offers valuable
+                mentorship and consulting services. Feel free to reach out to
+                connect with Mesfin. If you love technology,
+                <span className='text-green-600 px-1'>Code with Mesfin</span>
+                is your reliable mentor.
               </p>
               <GetStartedButton />
             </div>
@@ -196,7 +199,7 @@ export default function App() {
 
               data-aos-duration="500" className='w-full md:w-2/5 py-10 md:py-1'>
               <img src="https://img.freepik.com/free-vector/organic-flat-customer-support-illustration_23-2148899134.jpg?size=626&ext=jpg&ga=GA1.2.617832925.1708503188&semt=ais" alt=""
-              className='rounded'
+                className='rounded'
               />
             </div>
           </div>
@@ -204,7 +207,7 @@ export default function App() {
       </section>
 
 
-      <section className={`${isDarkMode?'bg-gray-700':'bg-white'}`}>
+      <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'}`}>
         <div className='mx-auto max-w-[85%] py-16'>
           <div className="md:flex md:items-center md:space-x-10">
             <div data-aos="fade-up"
@@ -216,18 +219,19 @@ export default function App() {
             <div data-aos="fade-up"
 
               data-aos-duration="500" className='w-full md:w-4/6 py-10 md:py-1'>
-              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode?'text-blue-400':'text-blue-600'}`}>
+              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>
                 Training
               </h1>
-              <p className={`${isDarkMode?'text-gray-300':'text-[#676c72]'} pt-4 py-2`}>
-                We pride ourselves on providing exceptional training to our
-                valued customers. Our comprehensive training covers everything
-                from business perspectives to technical aspects of the Enterprise system.
-                With professional documentation, user guides, video based manuals,
-                and on-demand training options, we ensure that you have the
-                resources and support you need to maximize the benefits of our
-                ERP solution. Empower your team with the knowledge and skills
-                necessary for seamless integration and optimal utilization of our system.
+              <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-500'} pt-4 py-2`}>
+                Mesfin is a passionate learner, mentor, and team player with extensive
+                experience in web and mobile app development, AI products, data analytics,
+                Agile methodologies (Scrum or Kanban), Web3.0, and Blockchain. He thrives
+                on creating user-friendly, aesthetically pleasing, and cost-effective
+                solutions that meet current trends. <br />
+                Looking for tech training or mentorship for yourself or your company?
+                <span className="text-green-600 px-1">Code with Mesfin</span> can help! Mesfin emphasizes the importance of expert
+                advice, thorough research, and validation before starting any product
+                development project. {"Don't"} hesitate to reachout me whenever you need my help.
               </p>
               <GetStartedButton />
             </div>
@@ -237,22 +241,30 @@ export default function App() {
       </section>
 
 
-      <section className={isDarkMode?'bg-gray-800':'bg-blue-100'}>
+      <section className={isDarkMode ? 'bg-gray-800' : 'bg-blue-100'}>
         <div className='mx-auto max-w-[85%] py-16'>
           <div className="md:flex md:items-center md:space-x-10">
             <div data-aos="fade-up"
               data-aos-duration="500" className='w-full md:w-3/5'>
-              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode?'text-blue-400':'text-blue-600'}`}>
+              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>
                 Consultancy
               </h1>
-              <p className={`${isDarkMode?'text-gray-300':'text-gray-600'} pt-4 py-2`}>
-
-                2lifi {"isn't"} just a solution provider; {"it's"} your trusted ally.
-                We go beyond providing an Enterprise software solution – we consult with our customers
-                on technology updates, new business opportunities, innovations, and the
-                adoption of Artificial Intelligence and Web3.0 based solutions.
-                Our expert engineers are dedicated to constant innovation, working
-                diligently to enhance and grow your business.
+              <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-500'} pt-4 py-2`}>
+                <span className="font-semibold">
+                  In {"today's"} rapidly evolving tech landscape, staying competitive
+                  often requires embracing transformative technologies.
+                </span> <br />
+                As an experienced tech consultant with a background in startups and
+                larger companies, {"I've"} seen firsthand how technology can revolutionize
+                business operations. <br />
+                My experience combined with personalized advice and mentorship
+                has demonstrably benefited past employers. <br />
+                <span className="font-semibold">
+                  If you believe technology can directly or indirectly impact your business,
+                  <span className='px-1 text-green-600'>Code with Mesfin</span> can offer
+                  valuable consulting services to help you navigate the ever-changing
+                  tech landscape.
+                </span>
               </p>
               <GetStartedButton />
             </div>
