@@ -23,7 +23,7 @@ const links = [
   { title: "Services", href: "/services" },
   { title: "Experiences", href: "/experiences" },
   { title: "Certifications", href: "/certifications" },
-  { title: "Articles", href: "/articles" },
+  { title: "Articles", href: "https://codewithmesfin.medium.com",target:true },
 ]
 
 
@@ -50,7 +50,8 @@ export default function PublicNavbar() {
               </div>
               <div className='hidden md:flex space-x-10'>
                 {
-                  links.map((item, i) => <Link key={i} href={item.href}
+                  links.map((item, i) => <Link key={i}
+                   href={item.href} target={item.target?'_blank':"_self"}
                     className={`${isDarkMode ? isActiveTab(item.href) ? "text-white font-semibold" : "text-gray-200" : isActiveTab(item.href) ? "text-gray-900 font-semibold" : "text-gray-700"} text-sm font-normal leading-6`}>
                     {item.title}
                   </Link>)
@@ -110,6 +111,7 @@ export default function PublicNavbar() {
                 {
                   links.map((item, i) => <Link onClick={() => setMobileMenuOpen(false)} key={i}
                     href={item.href}
+                    target={item.target?'_blank':"_self"}
                     className={`${isDarkMode?'text-gray-200 hover:bg-gray-100':'text-gray-900 hover:bg-gray-50'} -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7`}
                   >
                     {item.title}
