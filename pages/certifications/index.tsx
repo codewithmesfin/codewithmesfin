@@ -77,7 +77,7 @@ export default function Certifications() {
                         {
                             certifications.map((x: any, i: number) => <div key={i} className="h-full w-full rounded">
                                 <img src={x.image} alt=""
-                                    className='h-full w-full max-h-[300px] object-fit md:max-h-[548px] shadow-sm rounded-xl'
+                                    className='h-full w-full max-h-[300px] object-fit md:max-h-[548px] shadow-sm rounded'
                                 />
                             </div>)
                         }

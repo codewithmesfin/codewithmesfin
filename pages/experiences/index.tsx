@@ -3,9 +3,10 @@ import { useTheme } from '@/context/themeContext';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 
 export default function Experiences() {
+
     const { isDarkMode } = useTheme();
     const experiences = [
         {
@@ -138,10 +139,11 @@ export default function Experiences() {
             ],
         },
     ];
+
     return (
         <div>
-             <Head>
-                <title>{"Mesfin's"} Experience </title>
+            <Head>
+                <title>{"Mesfin's"}Experience</title>
                 <meta
                     name="description"
                     content="Mesfin brings a diverse range of technical expertise to the table, having experience in both on-site and remote work environments. He has held various roles throughout his career, including software engineer, machine learning practitioner, data analyst, and developer across frontend, backend, mobile app, and Web3.0 domains."
@@ -175,13 +177,13 @@ export default function Experiences() {
                                     Ready to make a significant impact as a valuable asset to any team.
                                 </p>
                                 <h1 className={`mt-5 mb-2 font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'} text-xl md:text-2xl`}>
-                                  Companies I worked for
+                                    Companies I worked for
                                 </h1>
                                 {
-                                    experiences.map((x:any,i:number)=><div key={i} className='py-2'>
-                                        <Link href={x.href} target='_blank' className={`flex items-center space-x-2 ${isDarkMode?'text-gray-200':'text-gray-900'}`}>
-                                            {i+1}.<span className='pl-2 pr-3'>{x.company} </span>
-                                            <span className='text-green-600'><Icon path='open' w='4' h='4' /></span>
+                                    experiences.map((x: any, i: number) => <div key={i} className='py-2'>
+                                        <Link href={x.href} target='_blank' className={`flex items-center space-x-2 ${isDarkMode ? 'text-gray-200' : 'text-gray-900'}`}>
+                                            {i + 1}.<span className='pl-2 pr-3'>{x.company} </span>
+                                            <span className='text-blue-600'><Icon path='open' w='4' h='4' /></span>
                                         </Link>
                                     </div>)
                                 }
@@ -198,7 +200,7 @@ export default function Experiences() {
                                 <div className="">
                                     {
                                         experiences.map((x: any, i: number) => <div key={i}
-                                            className={`p-5 my-5 shadow-sm rounded h-full border ${isDarkMode?'border-gray-700 bg-gray-800':'border-[#edf2f7]'}`}
+                                            className={`p-5 my-5 shadow-sm rounded h-full border ${isDarkMode ? 'border-gray-700 bg-gray-800' : 'border-[#edf2f7]'}`}
                                         >
                                             <h1 className={`font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>{x.title} </h1>
                                             <div className="flex justify-between items-center py-1">
@@ -223,9 +225,9 @@ export default function Experiences() {
                                                 <p className={`font-bold text-sm ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Description</p>
                                                 {
                                                     x.description && x.description.map((y: any, j: number) => <div key={j}
-                                                     className={`flex py-1 ml-3 ${isDarkMode?'text-gray-300':'text-gray-700'}`}
-                                                     >
-                                                        <div className="pt-2">
+                                                        className={`flex py-1 ml-3 ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}
+                                                    >
+                                                        <div className="pt-2 text-green-600">
                                                             <Icon path='show' radius='3' h='4' w='4' />
                                                         </div>
                                                         <span className="pl-2 text-sm">

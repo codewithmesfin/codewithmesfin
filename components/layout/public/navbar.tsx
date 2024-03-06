@@ -23,7 +23,7 @@ const links = [
   { title: "Services", href: "/services" },
   { title: "Experiences", href: "/experiences" },
   { title: "Certifications", href: "/certifications" },
-  { title: "Articles", href: "https://codewithmesfin.medium.com",target:true },
+  { title: "Articles", href: "https://codewithmesfin.medium.com", target: true },
 ]
 
 
@@ -51,7 +51,7 @@ export default function PublicNavbar() {
               <div className='hidden md:flex space-x-10'>
                 {
                   links.map((item, i) => <Link key={i}
-                   href={item.href} target={item.target?'_blank':"_self"}
+                    href={item.href} target={item.target ? '_blank' : "_self"}
                     className={`${isDarkMode ? isActiveTab(item.href) ? "text-white font-semibold" : "text-gray-200" : isActiveTab(item.href) ? "text-gray-900 font-semibold" : "text-gray-700"} text-sm font-normal leading-6`}>
                     {item.title}
                   </Link>)
@@ -61,15 +61,18 @@ export default function PublicNavbar() {
           </div>
           <div className='flex items-center space-x-10'>
             <div className='hidden md:flex'>
-              <Link href={"/dashboard"}
+              <Link href={"/contact"}
                 className={`text-sm font-normal leading-6 ${isDarkMode ? 'text-gray-200' : 'text-gray-600'}`}>
                 Support
               </Link>
             </div>
             <div className="hidden md:block">
-              <button className={`${isDarkMode ? 'bg-white text-gray-800' : 'text-white bg-green-600'} shadow-lg text-sm rounded px-5 py-2`}>
+              <Link
+                href='https://calendly.com/mesfin-tsegaye/codewithmesfin'
+                target='_blank'
+                className={`${isDarkMode ? 'bg-white text-gray-800' : 'text-white bg-green-600'} shadow-lg text-sm rounded px-5 py-2`}>
                 Reach me
-              </button>
+              </Link>
             </div>
             <button onClick={toggleDarkMode}
               className={`mx-3 flex justify-center items-center rounded-full ${isDarkMode ? 'text-white hover:bg-gray-700 bg-gray-800' : 'hover:bg-gray-400 text-gray-900 bg-gray-200'}  w-8 h-8`}
@@ -77,7 +80,7 @@ export default function PublicNavbar() {
               {isDarkMode ? <Icon path='light' h='6' w='6' /> : <Icon path='dark' h='6' w='6' radius='1' />}
             </button>
             <button
-              className={`${isDarkMode?'text-white':'text-gray-800'} flex md:hidden rounded-md mr-5`}
+              className={`${isDarkMode ? 'text-white' : 'text-gray-800'} flex md:hidden rounded-md mr-5`}
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
@@ -89,7 +92,7 @@ export default function PublicNavbar() {
 
       <Dialog as="div" className="lg:hidden " open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="inset-0 z-10" />
-        <Dialog.Panel className={`${isDarkMode?'bg-gray-800':'bg-white sm:ring-gray-900/10'} fixed  inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1`}>
+        <Dialog.Panel className={`${isDarkMode ? 'bg-gray-800' : 'bg-white sm:ring-gray-900/10'} fixed  inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1`}>
           <div className="flex items-center justify-between">
             <div onClick={() => setMobileMenuOpen(false)}>
               <Brand />
@@ -97,7 +100,7 @@ export default function PublicNavbar() {
 
             <button
               type="button"
-              className={`-m-2.5 rounded-md p-2.5 ${isDarkMode?'text-gray-100':'text-gray-900'}`}
+              className={`-m-2.5 rounded-md p-2.5 ${isDarkMode ? 'text-gray-100' : 'text-gray-900'}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -111,13 +114,18 @@ export default function PublicNavbar() {
                 {
                   links.map((item, i) => <Link onClick={() => setMobileMenuOpen(false)} key={i}
                     href={item.href}
-                    target={item.target?'_blank':"_self"}
-                    className={`${isDarkMode?'text-gray-200 hover:bg-gray-100':'text-gray-900 hover:bg-gray-50'} -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7`}
+                    target={item.target ? '_blank' : "_self"}
+                    className={`${isDarkMode ? 'text-gray-200 hover:bg-gray-100' : 'text-gray-900 hover:bg-gray-50'} -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7`}
                   >
                     {item.title}
                   </Link>)
                 }
-
+                <Link onClick={() => setMobileMenuOpen(false)}
+                  href={"/contact"}
+                  className={`${isDarkMode ? 'text-gray-200 hover:bg-gray-100' : 'text-gray-900 hover:bg-gray-50'} -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7`}
+                >
+                  Contact us
+                </Link>
               </div>
 
             </div>
