@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useTheme } from '@/context/themeContext';
+import Head from 'next/head';
 import React from 'react'
 
 
@@ -58,6 +59,15 @@ export default function Certifications() {
 
     return (
         <div>
+             <Head>
+        <title>Mesfin - Certifications</title>
+        <meta
+          name="description"
+          content="Mesfin holds a Bachelor of Science degree from Addis Ababa University. He has further enriched his skillset through various prominent institutions, including Udacity, Calyptus, Alchemy University, Google, IBM, and TESTDOME."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
             <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'} pt-24 pb-16`}>
                 <div className='mx-auto max-w-[90%] '>
                     <h1 className={`${isDarkMode ? 'text-white' : "text-gray-800"} text-4xl my-8 text-center md:text-7xl font-extrabold py-2`}>

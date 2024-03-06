@@ -1,5 +1,6 @@
 import Icon from '@/components/icon';
 import { useTheme } from '@/context/themeContext';
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
@@ -139,6 +140,15 @@ export default function Experiences() {
     ];
     return (
         <div>
+             <Head>
+                <title>{"Mesfin's"} Experience </title>
+                <meta
+                    name="description"
+                    content="Mesfin brings a diverse range of technical expertise to the table, having experience in both on-site and remote work environments. He has held various roles throughout his career, including software engineer, machine learning practitioner, data analyst, and developer across frontend, backend, mobile app, and Web3.0 domains."
+                />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'} pt-32 pb-16`}>
                 <div className='mx-auto max-w-[90%] '>
                     <div className="md:flex md:spaxe-x-10  md:justify-between">

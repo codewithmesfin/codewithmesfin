@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import GetStartedButton from '@/components/getStartedButton';
 import { useTheme } from '@/context/themeContext';
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -10,6 +11,15 @@ export default function App() {
 
   return (
     <div>
+        <Head>
+        <title>Code with Mesfin</title>
+        <meta
+          name="description"
+          content="Mesfin, a Software Engineer, delights in crafting innovative mobile and web systems loved by users. With expertise in AI, Web3.0, Agile, and frontend/backend development, Mesfin offers mentorship and a friendly approach."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'} pt-32 pb-16`}>
         <div className='mx-auto max-w-[85%] '>
           <div className="md:flex md:spaxe-x-10 md:justify-evenly">

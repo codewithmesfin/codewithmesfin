@@ -1,5 +1,6 @@
 import TypeWriiter from '@/components/typeWriter';
 import { useTheme } from '@/context/themeContext';
+import Head from 'next/head';
 import Image from 'next/image'
 import Link from 'next/link';
 import React from 'react'
@@ -54,6 +55,15 @@ export default function Me() {
 
     return (
         <div>
+            <Head>
+                <title>About Mesfin Tsegaye</title>
+                <meta
+                    name="description"
+                    content="Passionate Software Developer with over five years of industry expertise, specializing in remote-based roles across multiple global locations. "
+                />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'} py-32`}>
                 <div className='mx-auto max-w-[90%] '>
                     <div className="md:flex md:spaxe-x-10 md:items-center md:justify-evenly">
@@ -71,7 +81,7 @@ export default function Me() {
                         <div className='w-full md:w-[50%] h-full mt-10 md:mt-1'>
                             <h1 className={`leading-10 font-extrabold ${isDarkMode ? 'text-white' : 'text-gray-900'} text-xl md:text-6xl`}>
                                 Hi, my name is <br className='hidden md:block' />
-                                <span className={isDarkMode?'text-blue-300':'text-blue-600'}>Mesfin Tsegaye</span>
+                                <span className={isDarkMode ? 'text-blue-300' : 'text-blue-600'}>Mesfin Tsegaye</span>
                             </h1>
                             <h2 className='mt-5 flex text-xl md:text-3xl space-x-2 font-bold text-[#f2740d]'>
                                 <span className={isDarkMode ? 'text-white' : 'text-gray-500'}> I am </span>
@@ -90,14 +100,14 @@ export default function Me() {
                             <div className="mt-2">
                                 <h1 className={`${isDarkMode ? 'text-white' : 'text-gray-700'} text-lg md:text-3xl pt-4 pb-1`}>Get in touch</h1>
                                 <div className='grid grid-cols-1 md:grid-cols-2 gap-2 mt-2'>
-                                {
-                                    socials.map((x: any, i: number) => <div key={i}>
-                                        <div className="flex items-center space-x-2">
-                                            <p className={`font-bold ${isDarkMode?'text-white':'text-gray-600'}`}>{x.title}: </p> 
-                                            <Link href={x.href} target='_blank' className='text-green-600'>{x.value} </Link>
-                                        </div> 
-                                    </div>)
-                                }
+                                    {
+                                        socials.map((x: any, i: number) => <div key={i}>
+                                            <div className="flex items-center space-x-2">
+                                                <p className={`font-bold ${isDarkMode ? 'text-white' : 'text-gray-600'}`}>{x.title}: </p>
+                                                <Link href={x.href} target='_blank' className='text-green-600'>{x.value} </Link>
+                                            </div>
+                                        </div>)
+                                    }
                                 </div>
                             </div>
                         </div>
