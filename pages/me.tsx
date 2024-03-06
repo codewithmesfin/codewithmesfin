@@ -13,7 +13,7 @@ export default function Me() {
         "a Software Engineer",
         "a Frontend Developer",
         "a Backend Developer",
-        "Web3 Developer",
+        "Web3.0 Developer",
         "a Scrum Master",
         "a Team Leader",
         "a Blockchain Developer",
@@ -34,7 +34,7 @@ export default function Me() {
         {
             title: "Github",
             value: "@codewithmesfin",
-            href: "https://github.com/sciemesfin",
+            href: "https://github.com/codewithmesfin",
         },
         {
             title: "Email",
