@@ -19,7 +19,7 @@ export default function App() {
                 data-aos="fade-up"
                 data-aos-duration="500"
                 src="/images/mesfine.png" alt='logo' width={400} height={400}
-                className='rounded object-cover h-full shadow-xl'
+                className='rounded object-cover h-full md:shadow-xl'
               />
             </div>
 
@@ -40,9 +40,9 @@ export default function App() {
               </p>
               <div className="mt-4 flex items-center space-x-3 md:space-x-10">
 
-                <button className='px-6 shadow py-2 text-sm rounded bg-[#a278fe] hover:bg-[#7446d9] text-[#f4f7fd]'>
+                <Link href={"/me"} className='px-6 shadow py-2 text-sm rounded bg-[#a278fe] hover:bg-[#7446d9] text-[#f4f7fd]'>
                   Get to know more
-                </button>
+                </Link>
                 <button className='px-6 shadow py-2 text-sm rounded bg-[#475365] hover:bg-[#5d6a7d] text-[#f4f7fd]'>
                   Send feedback
                 </button>
