@@ -9,7 +9,7 @@ export default function Me() {
     const { isDarkMode } = useTheme();
     const roles = [
         "Machine Learning Practitioner",
-        "Data Scienctist",
+        "Data Scientist",
         "a Software Engineer",
         "a Frontend Developer",
         "a Backend Developer",

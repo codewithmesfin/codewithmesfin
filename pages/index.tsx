@@ -11,7 +11,7 @@ export default function App() {
 
   return (
     <div>
-        <Head>
+      <Head>
         <title>Code with Mesfin</title>
         <meta
           name="description"
@@ -85,7 +85,7 @@ export default function App() {
 
       <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'}`}>
         <div className='mx-auto max-w-[90%] py-16'>
-          <div className="md:flex md:items-center md:space-x-10">
+          <div className="md:flex md:items-center justify-between md:space-x-10">
             <div data-aos="fade-up"
               data-aos-duration="600" className='w-full md:w-3/5'>
               <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>
@@ -104,8 +104,9 @@ export default function App() {
             <div
               data-aos="fade-up"
               data-aos-duration="500"
-              className='w-full md:w-2/5'>
-              <img src="https://i.pinimg.com/originals/75/95/2d/75952ddbecd4743baf83236395b20541.gif" alt="" />
+              className='w-full md:w-2/5 rounded'>
+              <img src="https://i.pinimg.com/originals/75/95/2d/75952ddbecd4743baf83236395b20541.gif" 
+              alt="" className='rounded object-contain' />
             </div>
           </div>
         </div>
@@ -113,14 +114,17 @@ export default function App() {
 
       <section className={`${isDarkMode ? 'bg-gray-800' : 'bg-blue-100'}`}>
         <div className='mx-auto max-w-[90%] py-16'>
-          <div className="md:flex md:items-center md:space-x-10">
+          <div className="md:flex md:items-center md:space-x-10 ">
             <div data-aos="fade-up"
 
-              data-aos-duration="500" className='w-full md:w-2/6'>
+              data-aos-duration="500" className='w-full md:w-2/6 '>
               <img src="https://img.freepik.com/free-vector/data-extraction-concept-illustration_114360-4906.jpg?size=626&ext=jpg&ga=GA1.1.617832925.1708503188&semt=ais"
-                alt="" />
+                alt=""
+                className='rounded'
+              />
             </div>
-            <div data-aos="fade-up"
+            <div
+              data-aos="fade-up"
               data-aos-duration="500" className='w-full md:w-4/6 py-10 md:py-1'>
               <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>
                 <span className='font-extrabold'>ERPNext</span> Guidance & Support
@@ -152,7 +156,7 @@ export default function App() {
         <div className='mx-auto max-w-[90%] py-16'>
           <div className="md:flex md:items-center md:space-x-10">
             <div data-aos="fade-up"
-              data-aos-duration="600" className='w-full md:w-3/5'>
+              data-aos-duration="600" className='w-full md:w-3/5 order-last md:order-none'>
               <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>
                 Does <span className="font-extrabold">Agile</span> work for every project?
               </h1>
@@ -177,13 +181,13 @@ export default function App() {
             <div
               data-aos="fade-up"
               data-aos-duration="500"
-              className='w-full md:w-2/5'>
-              <img src="https://img.freepik.com/free-vector/statistics-concept-illustration_114360-172.jpg?t=st=1709661315~exp=1709664915~hmac=f5b369f94ca04e47dfc0e25dbef1d9de785c1503d60f075e6843b7e0f4a7fa4e&w=1800" alt="" />
+              className='w-full md:w-2/5 rounded'>
+              <img src="https://img.freepik.com/free-vector/statistics-concept-illustration_114360-172.jpg?t=st=1709661315~exp=1709664915~hmac=f5b369f94ca04e47dfc0e25dbef1d9de785c1503d60f075e6843b7e0f4a7fa4e&w=1800" 
+              alt="" className='rounded' />
             </div>
           </div>
         </div>
       </section>
-
 
       <section className={`${isDarkMode ? 'bg-gray-800' : 'bg-blue-100'}`}>
         <div className='mx-auto max-w-[85%] py-16'>
@@ -279,8 +283,10 @@ export default function App() {
               <GetStartedButton />
             </div>
             <div data-aos="fade-up"
-              data-aos-duration="500" className='w-full md:w-2/5 py-10 md:py-1'>
-              <img src="https://img.freepik.com/free-photo/side-view-businesswoman-showing-analytical-charts-her-male-coworker_1098-20620.jpg?size=626&ext=jpg&ga=GA1.1.617832925.1708503188&semt=sph" alt="" />
+              data-aos-duration="500"
+               className='w-full md:w-2/5 py-10 md:py-1 rounded'>
+              <img src="https://img.freepik.com/free-photo/side-view-businesswoman-showing-analytical-charts-her-male-coworker_1098-20620.jpg?size=626&ext=jpg&ga=GA1.1.617832925.1708503188&semt=sph"
+               alt="" className='rounded' />
             </div>
           </div>
         </div>
