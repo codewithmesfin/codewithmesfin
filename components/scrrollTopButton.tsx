@@ -32,7 +32,7 @@ export default function ScrollTopButton() {
     return isVisible && (
         <div
             onClick={scrollToTop}
-            className="rounded-full p-3 fixed bottom-5 right-5  bg-[#a278fe] shadow-xl text-white cursor-pointer"
+            className="rounded-full p-3 fixed bottom-5 right-5  bg-[#fa5d00] shadow-xl text-white cursor-pointer"
         >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5}
                 stroke="currentColor" className="w-4 h-4">
