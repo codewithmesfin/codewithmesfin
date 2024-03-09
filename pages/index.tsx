@@ -175,7 +175,7 @@ export default function Index() {
       <section className={`${isDarkMode ? 'bg-gray-800' : 'bg-white'} py-8`}>
         <div className='mx-auto max-w-[90%]'>
           <div className="py-10">
-            <div className="md:flex space-x-10 justify-between items-center">
+            <div className="md:flex md:space-x-10 justify-between items-center">
               <div className="w-full md:w-3/5">
                 <h1 className={`${isDarkMode ? 'text-white' : 'text-[#1D1E1C]'} h2 py-3`}>
                   Connect with Me today
