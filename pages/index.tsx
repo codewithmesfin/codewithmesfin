@@ -1,298 +1,211 @@
 /* eslint-disable @next/next/no-img-element */
-import GetStartedButton from '@/components/getStartedButton';
+
+import HelpCarousel from '@/components/helpCarousel';
+
+import PrimaryButton from '@/components/primaryButton'
+import PrimaryLinkButton from '@/components/primaryLinkButton';
+import ServiceCarousel from '@/components/serviceCarousel';
 import { useTheme } from '@/context/themeContext';
-import Head from 'next/head';
-import Image from 'next/image';
+import mesfinHelps from '@/utils/mesfinServices';
+import Image from 'next/image'
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react'
 
-export default function App() {
+export default function Index() {
   const { isDarkMode } = useTheme();
-
+  const [dismissableIndex, setDismissableIndex] = useState(0)
   return (
     <div>
-      <Head>
-        <title>Code with Mesfin</title>
-        <meta
-          name="description"
-          content="Mesfin, a Software Engineer, delights in crafting innovative mobile and web systems loved by users. With expertise in AI, Web3.0, Agile, and frontend/backend development, Mesfin offers mentorship and a friendly approach."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'} pt-32 pb-16`}>
-        <div className='mx-auto max-w-[85%] '>
-          <div className="md:flex md:spaxe-x-10 md:justify-evenly">
+      <section className={`border-b border-[#fa5d00] pt-32 pb-20 ${isDarkMode ? 'bg-gray-800' : 'bg-[#fff8f1]'}`}>
+        <div className='w-full md:max-w-[90%] mx-auto'>
+          <div className="md:flex md:space-x-10 items-end">
+            <div className="hero-img w-full md:1/2">
+              <div>
+                <div className="flex space-x-2">
+                  <svg className={`size-6 mt-6 ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}
+                    width="8" height="6" viewBox="0 0 16 16"
+                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true">
+                    <path d="M7.39762 10.3C7.39762 11.0733 7.14888 11.7 6.6514 12.18C6.15392 12.6333 5.52552 12.86 4.76621 12.86C3.84979 12.86 3.09047 12.5533 2.48825 11.94C1.91222 11.3266 1.62421 10.4467 1.62421 9.29999C1.62421 8.07332 1.96459 6.87332 2.64535 5.69999C3.35231 4.49999 4.33418 3.55332 5.59098 2.85999L6.4943 4.25999C5.81354 4.73999 5.26369 5.27332 4.84476 5.85999C4.45201 6.44666 4.19017 7.12666 4.05926 7.89999C4.29491 7.79332 4.56983 7.73999 4.88403 7.73999C5.61716 7.73999 6.21938 7.97999 6.69067 8.45999C7.16197 8.93999 7.39762 9.55333 7.39762 10.3ZM14.6242 10.3C14.6242 11.0733 14.3755 11.7 13.878 12.18C13.3805 12.6333 12.7521 12.86 11.9928 12.86C11.0764 12.86 10.3171 12.5533 9.71484 11.94C9.13881 11.3266 8.85079 10.4467 8.85079 9.29999C8.85079 8.07332 9.19117 6.87332 9.87194 5.69999C10.5789 4.49999 11.5608 3.55332 12.8176 2.85999L13.7209 4.25999C13.0401 4.73999 12.4903 5.27332 12.0713 5.85999C11.6786 6.44666 11.4168 7.12666 11.2858 7.89999C11.5215 7.79332 11.7964 7.73999 12.1106 7.73999C12.8437 7.73999 13.446 7.97999 13.9173 8.45999C14.3886 8.93999 14.6242 9.55333 14.6242 10.3Z" fill="currentColor" />
+                  </svg>
+                  <p className={` ${isDarkMode ? 'text-gray-200' : ''} py-6`}>
+                    <em className='quote'> Everyone in this country should learn how to program because
+                      it teaches you how to think.</em> <br /> <span className='font-bold text-md'>– Steve Jobs</span>
+                  </p>
+                </div>
+                <h1
+                  className={`${isDarkMode ? 'text-white' : 'text-[#1d1e1c]'} title pb-4 text-3xl md:text-7xl`}>
+                  Dive into Code, <span
+                    className='text-[#fa5d00] font-bold mesfin'>{"Mesfin's "}</span> Guidance
+                </h1>
+                <p className='py-6 text-[18px] '>
+                  You have been invited to an exciting voyage through the realm of coding.
+                  With {"Mesfin's"} mentorship, {"you'll"} explore the depths of
+                  programming languages and frameworks, gaining hands-on experience
+                  and insight along the way.
+                </p>
 
-            <div className='md:hidden mb-10 h-full w-full md:w-[30%] flex justify-center'>
-              <Image
-                data-aos="fade-up"
-                data-aos-duration="500"
-                src="/images/mesfine.png" alt='logo' width={400} height={400}
-                className='rounded object-cover h-full md:shadow-xl'
-              />
-            </div>
-
-
-            <div className='w-full md:w-[50%] h-full'>
-              <h1 className={`font-normal ${isDarkMode ? 'text-white' : 'text-gray-900'} text-3xl md:text-4xl`}>
-                Dive into Code,<span className='text-green-600 px-2'>{"Mesfin's"}</span>Guidance
-              </h1>
-              <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-500'} pt-6 py-2`}>
-                You have been invited to an exciting voyage through the realm of coding.
-                With {"Mesfin's "} mentorship, {" you'll"} explore the depths of programming languages and frameworks, gaining
-                hands-on experience and insight along the way.
-              </p>
-              <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-500'} py-2`}>
-                Whether you are a beginner or looking to enhance your coding skills,
-                our interactive lessons, hands-on projects, and personalized support
-                from Mesfin himself will propel you into the fascinating realm of coding.
-              </p>
-              <div className="mt-4 flex items-center space-x-3 md:space-x-10">
-
-                <Link href={"/me"} className='px-6 shadow py-2 text-sm rounded bg-[#a278fe] hover:bg-[#7446d9] text-[#f4f7fd]'>
-                  Get to know more
-                </Link>
-                <button className='px-6 shadow py-2 text-sm rounded bg-[#475365] hover:bg-[#5d6a7d] text-[#f4f7fd]'>
-                  Send feedback
-                </button>
+              </div>
+              <div className="py-3 pt-6">
+                <div className="flex space-x-3">
+                  <div className='w-full md:w-3/5'>
+                    <input type="text" placeholder='Your email address'
+                      className='w-full bg-white border border-gray-100 px-4 rounded-xl w-full py-3'
+                    />
+                  </div>
+                  <div className='w-full md:w-2/5 '>
+                    <PrimaryButton title="Get Started" />
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div className='hidden md:inline h-full w-full md:w-[30%] flex justify-center'>
+            <div className="w-full h-full md:1/2">
               <Image
                 data-aos="fade-up"
                 data-aos-duration="500"
                 src="/images/mesfine.png" alt='logo' width={400} height={400}
-                className='rounded object-cover h-full shadow-xl'
+                className='rounded object-cover h-full w-full'
               />
             </div>
-
           </div>
         </div>
       </section>
 
-      <section className={`${isDarkMode ? 'bg-gray-800' : 'bg-gray-100'} py-6`}>
+      <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-gray-100'} py-8`}>
         <div className='mx-auto max-w-[90%]'>
-          <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-500'} text-md`}>
+          <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-600'} text-md`}>
             Mesfin, a Software Engineer, delights in crafting innovative mobile
             and web systems loved by users. With expertise in AI, Web3.0, Agile,
             and frontend/backend development, Mesfin offers mentorship and a
-            friendly approach. <Link href={"/me"} className='text-green-600'>Read more about Mesfin</Link>.
+            friendly approach. <Link href={"/me"} className='text-[#fa5d00]'>Read more about Mesfin</Link>.
           </p>
         </div>
       </section>
 
       <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'}`}>
-        <div className='mx-auto max-w-[90%] py-16'>
-          <div className="md:flex md:items-center justify-between md:space-x-10">
-            <div data-aos="fade-up"
-              data-aos-duration="600" className='w-full md:w-3/5'>
-              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>
-                Build a Successful Product
-              </h1>
-              <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-500'} pt-4 py-2`}>
-                <span className={`font-semibold ${isDarkMode ? 'text-white' : 'text-gray-500'}`}>Are you building a new system, customizing an existing one,
-                  or upgrading to the latest version?</span> <br />
-                <span className='font-semibold'>{"Don't"} wait to reach out for professional advice and assistance,
-                  no matter the challenge. </span> Expert guidance can help ensure your business
-                decisions are well-informed and smooth. <span className="font-semibold text-green-600">{"Code with Mesfin"}</span> exists to support
-                your success in the technology world.
-              </p>
-              <GetStartedButton />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="500"
-              className='w-full md:w-2/5 rounded'>
-              <img src="https://i.pinimg.com/originals/75/95/2d/75952ddbecd4743baf83236395b20541.gif"
-                alt="" className='rounded object-contain' />
+        <div className='mx-auto max-w-[90%] py-6'>
+          <div className='py-4'>
+            <h1 className='text-center text-3xl md:text-6xl font-bold'>
+              Join Code with <span className='text-[#fa5d00]'> Mesfin</span>
+            </h1>
+            <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-800'} text-lg md:text-xl text-center py-3`}>
+              Expert guidance can help ensure your business
+              decisions are well-informed and smooth.
+            </p>
+          </div>
+          <div className='mx-auto max-w-[90%] py-6'>
+            <div className="md:flex items-center md:space-x-10">
+              <div className="w-full md:w-1/2">
+
+                {
+                  mesfinHelps.map((x: any, i: number) => <div key={i}>
+                    <div className={`py-2 border-t ${isDarkMode ? 'border-gray-800' : 'border-gray-100'} cursor-pointer`}
+                      onClick={() => setDismissableIndex(i)}
+                    >
+                      <div className="flex justify-between items-center space-x-10">
+                        <h1 className={`accordio-h1 py-1  ${dismissableIndex == i ? 'text-[#fa5d00]' : isDarkMode ? 'text-gray-100' : 'text-[#1D1E1C]'}`}>
+                          {x.title}
+                        </h1>
+                        <button
+                          className={isDarkMode ? 'text-white' : 'text-gray-600'}
+                        >
+                          {
+                            dismissableIndex == i ?
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                              </svg>
+
+                              : <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                              </svg>
+                          }
+                        </button>
+                      </div>
+                      {dismissableIndex == i && <div className=''>
+                        {/* <Border /> */}
+                        <p className={`py-1 accordio-p pb-4  ${isDarkMode ? 'text-gray-200' : 'text-[#6D6E6D]'}`}>
+                          {x.desc} <Link href={"/learn-more"}
+                            className='text-[#fa5d00]'
+                          >Learn more  </Link>
+
+                        </p>
+                      </div>}
+                    </div>
+                  </div>)
+                }
+              </div>
+              <div className="w-full md:w-1/2">
+                <img src="https://res.cloudinary.com/spiralyze/image/upload/f_auto/harvest/7009/time_tracking_10.webp"
+                  alt=""
+                  className='w-full h-full '
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className={`${isDarkMode ? 'bg-gray-800' : 'bg-blue-100'}`}>
-        <div className='mx-auto max-w-[90%] py-16'>
-          <div className="md:flex md:items-center md:space-x-10 ">
-            <div data-aos="fade-up"
-
-              data-aos-duration="500" className='w-full md:w-2/6 '>
-              <img src="https://img.freepik.com/free-vector/data-extraction-concept-illustration_114360-4906.jpg?size=626&ext=jpg&ga=GA1.1.617832925.1708503188&semt=ais"
-                alt=""
-                className='rounded'
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="500" className='w-full md:w-4/6 py-10 md:py-1'>
-              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>
-                <span className='font-extrabold'>ERPNext</span> Guidance & Support
-              </h1>
-              <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-500'} pt-4 py-2`}>
-                <span className={`font-semibold ${isDarkMode ? 'text-gray-200' : 'text-gray-500'}`}>
-                  Is your business looking to
-                  automate tasks and streamline operations?</span> <br />
-                ERPNext, a free and open-source ERP software, could be a perfect solution!
-                It offers a wide range of features to manage various aspects of your business,
-                from accounting and inventory to CRM and project management. <br />
-                <span className='font-semibold'>
-                  Thanks to the dedication of a global community of developers,
-                  ERPNext is free to download and use. <br />
-                </span>
-                If you need help getting started with ERPNext,
-                <span className='font-semibold text-green-600'>
-                  {" Code with Mesfin "}</span>
-                offers services for configuration, installation, deployment, customization, and ongoing maintenance.
-              </p>
-              <GetStartedButton />
-            </div>
-
+      <section className={`border-b border-[#FA5D00] ${isDarkMode ? 'bg-gray-800' : 'bg-[#FEF8F2]'} py-8`}>
+        <div className='mx-auto max-w-[90%]'>
+          <p className={`text-center eyebrow`}>SERVICES</p>
+          <h1 className={`mb-[64px] ${isDarkMode ? 'text-white' : 'text-[#1D1E1C]'} h2 text-center`}>Get unlimited help from industry experts
+          </h1>
+          <div className="py-3">
+            <ServiceCarousel />
           </div>
         </div>
       </section>
 
-      <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'}`}>
-        <div className='mx-auto max-w-[90%] py-16'>
-          <div className="md:flex md:items-center md:space-x-10">
-            <div data-aos="fade-up"
-              data-aos-duration="600" className='w-full md:w-3/5 order-last md:order-none'>
-              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>
-                Does <span className="font-extrabold">Agile</span> work for every project?
-              </h1>
-              <h2 className={`pt-3 ${isDarkMode ? 'text-gray-200' : 'text-gray-900'} `}>
-                What is the difference between
-                <span className={`px-1 italic font-semibold ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>
-                  {'delivering a product successfully and delivering a successful product?'}
-                </span>
-                And which one is your choice?
-              </h2>
-              <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-500'} pt-4 py-2`}>
-                <span className="text-green-600">Code with Mesfin</span> will help you
-                setting up and running the right team and show you building a
-                successful product. Mesfin has an expertise in setting up a
-                successful Remote, and on-site team on agile basis. It is common to see
-                many startups or even companies build a product that nobody wants. <br />
-                <span className={`${isDarkMode ? 'text-gray-200' : 'text-gray-900'} `}>{"Don't"} wait to
-                  reach-out mesfin for mentorship!</span>
-              </p>
-              <GetStartedButton />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="500"
-              className='w-full md:w-2/5 rounded'>
-              <img src="https://img.freepik.com/free-vector/statistics-concept-illustration_114360-172.jpg?t=st=1709661315~exp=1709664915~hmac=f5b369f94ca04e47dfc0e25dbef1d9de785c1503d60f075e6843b7e0f4a7fa4e&w=1800"
-                alt="" className='rounded' />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className={`${isDarkMode ? 'bg-gray-800' : 'bg-blue-100'}`}>
-        <div className='mx-auto max-w-[85%] py-16'>
-          <div data-aos="fade-up"
-
-            data-aos-duration="500" className="md:flex md:items-center md:space-x-10">
-            <div className='w-full md:w-3/5'>
-              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode ? 'text-gray-100' : 'text-gray-900'}`}>
-                <span className='text-4xl md:text-8xl text-blue-600 font-extrabold'>18</span> Hours Availablity
-              </h1>
-              <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} pt-4 py-2`}>
-                Mesfin brings extensive experience working across various locations and time zones.
-                He is highly engaged in continuous learning, actively applying his knowledge
-                through practice, research, and coding. Mesfin also offers valuable
-                mentorship and consulting services. Feel free to reach out to
-                connect with Mesfin. If you love technology,
-                <span className='text-green-600 px-1'>Code with Mesfin</span>
-                is your reliable mentor.
-              </p>
-              <GetStartedButton />
-            </div>
-            <div data-aos="fade-up"
-
-              data-aos-duration="500" className='w-full md:w-2/5 py-10 md:py-1'>
-              <img src="https://img.freepik.com/free-vector/organic-flat-customer-support-illustration_23-2148899134.jpg?size=626&ext=jpg&ga=GA1.2.617832925.1708503188&semt=ais" alt=""
-                className='rounded'
-              />
-            </div>
+      <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-[#FEF8F2]'} py-8`}>
+        <div className='mx-auto max-w-[90%] pt-10'>
+          <p className={`text-center eyebrow`}>5+ years of experience</p>
+          <h1 className={`${isDarkMode ? 'text-white' : 'text-[#1D1E1C]'} h2 py-3 text-center`}>
+            Industry experience since 2018
+          </h1>
+          <h3 className={`h3 py-2 text-center ${isDarkMode ? 'text-gray-300' : 'text-[rgba(29, 30, 28, .8)]'}`}>
+            I am here to help Student, Companies, or any Individuals seeking Tech advice
+          </h3>
+          <div className="py-3">
+            <HelpCarousel />
           </div>
         </div>
       </section>
 
 
-      <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'}`}>
-        <div className='mx-auto max-w-[85%] py-16'>
-          <div className="md:flex md:items-center md:space-x-10">
-            <div data-aos="fade-up"
-
-              data-aos-duration="500" className='w-full md:w-2/6'>
-              <img src="https://img.freepik.com/free-vector/coach-speaking-before-audience-mentor-presenting-charts-reports-employees-meeting-business-training-seminar-conference-vector-illustration-presentation-lecture-education_74855-8294.jpg?size=626&ext=jpg&ga=GA1.1.617832925.1708503188&semt=sph"
-                alt="" className='rounded' />
-            </div>
-            <div data-aos="fade-up"
-
-              data-aos-duration="500" className='w-full md:w-4/6 py-10 md:py-1'>
-              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>
-                Training
-              </h1>
-              <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-500'} pt-4 py-2`}>
-                Mesfin is a passionate learner, mentor, and team player with extensive
-                experience in web and mobile app development, AI products, data analytics,
-                Agile methodologies (Scrum or Kanban), Web3.0, and Blockchain. He thrives
-                on creating user-friendly, aesthetically pleasing, and cost-effective
-                solutions that meet current trends. <br />
-                Looking for tech training or mentorship for yourself or your company?
-                <span className="text-green-600 px-1">Code with Mesfin</span> can help! Mesfin emphasizes the importance of expert
-                advice, thorough research, and validation before starting any product
-                development project. {"Don't"} hesitate to reachout me whenever you need my help.
-              </p>
-              <GetStartedButton />
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-
-      <section className={isDarkMode ? 'bg-gray-800' : 'bg-blue-100'}>
-        <div className='mx-auto max-w-[85%] py-16'>
-          <div className="md:flex md:items-center md:space-x-10">
-            <div data-aos="fade-up"
-              data-aos-duration="500" className='w-full md:w-3/5'>
-              <h1 className={`text-2xl md:text-4xl font-normal ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>
-                Consultancy
-              </h1>
-              <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-500'} pt-4 py-2`}>
-                <span className="font-semibold">
-                  In {"today's"} rapidly evolving tech landscape, staying competitive
-                  often requires embracing transformative technologies.
-                </span> <br />
-                As an experienced tech consultant with a background in startups and
-                larger companies, {"I've"} seen firsthand how technology can revolutionize
-                business operations. <br />
-                My experience combined with personalized advice and mentorship
-                has demonstrably benefited past employers. <br />
-                <span className="font-semibold">
-                  If you believe technology can directly or indirectly impact your business,
-                  <span className='px-1 text-green-600'>Code with Mesfin</span> can offer
-                  valuable consulting services to help you navigate the ever-changing
-                  tech landscape.
-                </span>
-              </p>
-              <GetStartedButton />
-            </div>
-            <div data-aos="fade-up"
-              data-aos-duration="500"
-              className='w-full md:w-2/5 py-10 md:py-1 rounded'>
-              <img src="https://img.freepik.com/free-photo/side-view-businesswoman-showing-analytical-charts-her-male-coworker_1098-20620.jpg?size=626&ext=jpg&ga=GA1.1.617832925.1708503188&semt=sph"
-                alt="" className='rounded' />
+      <section className={`${isDarkMode ? 'bg-gray-800' : 'bg-white'} py-8`}>
+        <div className='mx-auto max-w-[90%]'>
+          <div className="py-10">
+            <div className="md:flex space-x-10 justify-between items-center">
+              <div className="w-full md:w-3/5">
+                <h1 className={`${isDarkMode ? 'text-white' : 'text-[#1D1E1C]'} h2 py-3`}>
+                  Connect with Me today
+                </h1>
+                <h3 className={`text-lg md:text-2xl py-2 ${isDarkMode ? 'text-gray-300' : 'text-[rgba(29, 30, 28, .8)]'}`}>
+                  I am doing my best to help the world connect to opportunity and positively impact business.
+                </h3>
+                <div className="mt-5 md:mt-10 md:flex items-center md:space-x-10">
+                  <PrimaryLinkButton
+                    href="https://calendly.com/mesfin-tsegaye/codewithmesfin"
+                    title='Discuss with Mesfin'
+                  />
+                  <div className='mt-6 md:mt-0'>
+                    <p className={`${isDarkMode ? 'text-white' : ''} quote text-lg md:text-xl font-semibold`}>
+                      Winners {"don't"} do different things. They do things differently!
+                    </p>
+                    <p className={`${isDarkMode ? 'text-white' : ''} text-left md:text-right  font-semibold text-lg mt-2`}>- Shiv Khera</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full md:w-2/5">
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/footer-illo-comp.svg"
+                  alt=""
+                  className='h-full w-full max-w-[380px] object-cover'
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-
     </div>
   )
 }

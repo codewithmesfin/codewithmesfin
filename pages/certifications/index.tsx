@@ -68,7 +68,7 @@ export default function Certifications() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-            <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'} pt-24 pb-16`}>
+            <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-[#fff8f1]'} pt-24 pb-16`}>
                 <div className='mx-auto max-w-[90%] '>
                     <h1 className={`${isDarkMode ? 'text-white' : "text-gray-800"} text-4xl my-8 text-center md:text-7xl font-extrabold py-2`}>
                         Certicates & Awards

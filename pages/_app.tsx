@@ -1,15 +1,15 @@
 import "@/styles/globals.css";
-import Layout from '../components/layout'
+
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { AuthProvider } from "@/context/authContext";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import GotopButton from "@/components/gotopButton";
 import { ThemeProvider, useTheme } from "@/context/themeContext";
+import PublicLayout from "@/components/public/layout";
+import GoTopButton from "@/components/goTopButton";
 
 export default function MyApp({ Component, pageProps }: any) {
   
@@ -25,13 +25,11 @@ export default function MyApp({ Component, pageProps }: any) {
 
   return (
     <ThemeProvider>
-    <AuthProvider>
-      <Layout>
+      <PublicLayout>
         <Component {...pageProps} />
         <ToastContainer />
-        <GotopButton/>
-      </Layout>
-    </AuthProvider>
+        <GoTopButton/>
+      </PublicLayout>
     </ThemeProvider>
   )
 }

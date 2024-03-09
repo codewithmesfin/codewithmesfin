@@ -59,13 +59,15 @@ export default function Icon({
     filterMore: "M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9",
     plus:"M12 4.5v15m7.5-7.5h-15",
     show:"M15 15l6-6m0 0l-6-6m6 6H9a6 6 0 000 12h3",
+    leftQuote:"M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z",
+    
 
   };
 
   const width = w ? `w-${w}` : 'w-3'
   const height = h ? `w-${h}` : 'w-3'
   return (
-    <div className={`text-${color}`}>
+    <span className={`text-${color}`}>
       <svg
         className={`${width} ${height}`}
         fill={fill ? fill : "none"}
@@ -80,6 +82,6 @@ export default function Icon({
           d={paths[path]}
         ></path>
       </svg>
-    </div>
+    </span>
   );
 }

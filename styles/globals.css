@@ -2,6 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-.Typewriter__cursor{
-    color: black !important;
+.Typewriter__cursor {
+  color: black !important;
+}
+
+title {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  line-height: 5rem !important;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji";
+}
+p {
+  color: #1d1e1c;
+  font-family: "MuotoTrial";
+  line-height: 26px;
+  font-weight: 400;
+}
+.mesfin {
+  font-family: "Dancing Script", cursive;
+}
+
+.quote {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.accordio-p {
+  font-family: "MuotoTrial";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px;
+}
+.accordio-h1 {
+  font-family: "MuotoTrial";
+  font-weight: 300;
+  font-size: 24px !important;
+  line-height: 32px;
+  margin: 0px;
+}
+.eyebrow {
+  -webkit-font-smoothing: antialiased;
+  color: #fa5d00;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 20px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 40px !important;
+  line-height: 50px !important;
+}
+
+.card-p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 0;
+}
+.h3 {
+  font-size: 20px;
+  font-weight: 400 !important;
+  font-family: MuotoWeb, sans-serif !important;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.help-em{
+  box-sizing: border-box;
+  font-size: 23px;
+  font-weight: 400;
+  text-indent: 24px;
+  font-family: MuotoWeb, sans-serif;
+  font-style: normal;
 }

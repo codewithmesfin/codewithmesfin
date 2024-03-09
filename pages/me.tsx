@@ -81,9 +81,10 @@ export default function Me() {
                         <div className='w-full md:w-[50%] h-full mt-10 md:mt-1'>
                             <h1 className={`leading-10 font-extrabold ${isDarkMode ? 'text-white' : 'text-gray-900'} text-xl md:text-6xl`}>
                                 Hi, my name is <br className='hidden md:block' />
-                                <span className={isDarkMode ? 'text-blue-300' : 'text-blue-600'}>Mesfin Tsegaye</span>
+                                <span className={isDarkMode ? 'text-[#fa5d00]' : 'text-[#fa5d00]'}>Mesfin Tsegaye</span>
                             </h1>
-                            <h2 className='mt-5 flex text-xl md:text-3xl space-x-2 font-bold text-[#f2740d]'>
+                            
+                            <h2 className={`mt-5 flex text-xl md:text-3xl space-x-2 font-bold ${isDarkMode?'text-gray-200':''}`}>
                                 <span className={isDarkMode ? 'text-white' : 'text-gray-500'}> I am </span>
                                 <TypeWriiter roles={roles} />
                             </h2>
@@ -104,7 +105,7 @@ export default function Me() {
                                         socials.map((x: any, i: number) => <div key={i}>
                                             <div className="flex items-center space-x-2">
                                                 <p className={`font-bold ${isDarkMode ? 'text-white' : 'text-gray-600'}`}>{x.title}: </p>
-                                                <Link href={x.href} target='_blank' className='text-green-600'>{x.value} </Link>
+                                                <Link href={x.href} target='_blank' className='text-[#fa5d00]'>{x.value} </Link>
                                             </div>
                                         </div>)
                                     }

@@ -151,7 +151,7 @@ export default function Experiences() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'} pt-32 pb-16`}>
+            <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-[#fff8f1]'} pt-32 pb-16`}>
                 <div className='mx-auto max-w-[90%] '>
                     <div className="md:flex md:spaxe-x-10  md:justify-between">
 
@@ -183,7 +183,7 @@ export default function Experiences() {
                                     experiences.map((x: any, i: number) => <div key={i} className='py-2'>
                                         <Link href={x.href} target='_blank' className={`flex items-center space-x-2 ${isDarkMode ? 'text-gray-200' : 'text-gray-900'}`}>
                                             {i + 1}.<span className='pl-2 pr-3'>{x.company} </span>
-                                            <span className='text-blue-600'><Icon path='open' w='4' h='4' /></span>
+                                            <span className='text-[#fa5d00]'><Icon path='open' w='4' h='4' /></span>
                                         </Link>
                                     </div>)
                                 }
@@ -200,7 +200,7 @@ export default function Experiences() {
                                 <div className="">
                                     {
                                         experiences.map((x: any, i: number) => <div key={i}
-                                            className={`p-5 my-5 shadow-sm rounded h-full border ${isDarkMode ? 'border-gray-700 bg-gray-800' : 'border-[#edf2f7]'}`}
+                                            className={`p-5 my-5 shadow-sm rounded h-full border ${isDarkMode ? 'border-gray-700 bg-gray-800' : 'bg-white border-[#edf2f7]'}`}
                                         >
                                             <h1 className={`font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>{x.title} </h1>
                                             <div className="flex justify-between items-center py-1">
@@ -227,7 +227,7 @@ export default function Experiences() {
                                                     x.description && x.description.map((y: any, j: number) => <div key={j}
                                                         className={`flex py-1 ml-3 ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}
                                                     >
-                                                        <div className="pt-2 text-green-600">
+                                                        <div className="pt-2 text-[#fa5d00]">
                                                             <Icon path='show' radius='3' h='4' w='4' />
                                                         </div>
                                                         <span className="pl-2 text-sm">
