@@ -166,7 +166,7 @@ export default function Experiences() {
                             </div>
                             <div className="py-3">
                                 <h1 className={`text-3xl py-2 md:text-4xl font-extrabold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Bio</h1>
-                                <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>
+                                <p className={isDarkMode ? 'text-gray-300' : ''}>
                                     Passionate full-stack developer with over five years of industry
                                     expertise, specializing in remote-based roles across multiple global
                                     locations. Skilled in FinTech, transportation, ecommerce, schools,

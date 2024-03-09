@@ -88,7 +88,7 @@ export default function Me() {
                                 <span className={isDarkMode ? 'text-white' : 'text-gray-500'}> I am </span>
                                 <TypeWriiter roles={roles} />
                             </h2>
-                            <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-500'} pt-6 py-2`}>
+                            <p className={`${isDarkMode ? 'text-gray-200' : ''} pt-6 py-2`}>
                                 Passionate full-stack developer with over five years of industry
                                 expertise, specializing in remote-based roles across multiple global
                                 locations. Skilled in FinTech, transportation, ecommerce, schools,

@@ -29,6 +29,7 @@ p {
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
+  font-size: 15px !important;
 }
 
 .accordio-p {
