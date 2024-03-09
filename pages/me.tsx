@@ -49,7 +49,7 @@ export default function Me() {
         {
             title: "Medium",
             value: "@codewithmesfin",
-            href: "https://bizenforce.medium.com",
+            href: "https://codewithmesfin.medium.com",
         },
     ];
 
