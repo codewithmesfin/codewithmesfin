@@ -9,7 +9,8 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { ThemeProvider, useTheme } from "@/context/themeContext";
 import PublicLayout from "@/components/public/layout";
-import GoTopButton from "../components/goTopButton";
+import ScrollTopButton from "@/components/scrrollTopButton";
+
 
 export default function MyApp({ Component, pageProps }: any) {
   
@@ -29,7 +30,7 @@ export default function MyApp({ Component, pageProps }: any) {
       <PublicLayout>
         <Component {...pageProps} />
         <ToastContainer />
-        <GoTopButton/>
+        <ScrollTopButton/>
       </PublicLayout>
     </ThemeProvider>
   )

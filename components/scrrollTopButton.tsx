@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-export default function GoTopButton() {
+export default function ScrollTopButton() {
     const isBrowser = () => typeof window !== 'undefined';
     const [isVisible, setIsVisible] = useState(false);
 
