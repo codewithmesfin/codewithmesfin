@@ -7,6 +7,7 @@ import PrimaryLinkButton from '@/components/primaryLinkButton';
 import ServiceCarousel from '@/components/serviceCarousel';
 import { useTheme } from '@/context/themeContext';
 import mesfinHelps from '@/utils/mesfinServices';
+import Head from 'next/head';
 import Image from 'next/image'
 import Link from 'next/link';
 import React, { useState } from 'react'
@@ -16,6 +17,15 @@ export default function Index() {
   const [dismissableIndex, setDismissableIndex] = useState(0)
   return (
     <div>
+       <Head>
+        <title>Code with Mesfin</title>
+        <meta
+          name="description"
+          content="Mesfin, a Software Engineer, delights in crafting innovative mobile and web systems loved by users. With expertise in AI, Web3.0, Agile, and frontend/backend development, Mesfin offers mentorship and a friendly approach."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <section className={`border-b border-[#fa5d00] pt-20 md:pt-32 pb-20 ${isDarkMode ? 'bg-gray-800' : 'bg-[#fff8f1]'}`}>
         <div className='max-w-[90%] mx-auto'>
           <div className="md:flex md:space-x-10 items-end">
