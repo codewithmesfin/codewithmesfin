@@ -38,7 +38,7 @@ export default function Index() {
                   Dive into Code, <span
                     className='text-[#fa5d00] font-bold mesfin'>{"Mesfin's "}</span> Guidance
                 </h1>
-                <p className='py-6 text-[18px]'>
+                <p className={`py-6 ${isDarkMode?'text-gray-200':'text-[18px]'}`}>
                   You have been invited to an exciting voyage through the realm of coding.
                   With {"Mesfin's"} mentorship, {"you'll"} explore the depths of
                   programming languages and frameworks, gaining hands-on experience
