@@ -85,7 +85,7 @@ export default function Index() {
       <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'}`}>
         <div className='mx-auto max-w-[90%] py-6'>
           <div className='py-4'>
-            <h1 className='text-center text-3xl md:text-6xl font-bold'>
+            <h1 className={`${isDarkMode?'text-white':''} text-center text-3xl md:text-6xl font-bold`}>
               Join Code with <span className='text-[#fa5d00]'> Mesfin</span>
             </h1>
             <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-800'} text-lg md:text-xl text-center py-3`}>
