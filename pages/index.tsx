@@ -16,8 +16,8 @@ export default function Index() {
   const [dismissableIndex, setDismissableIndex] = useState(0)
   return (
     <div>
-      <section className={`border-b border-[#fa5d00] pt-32 pb-20 ${isDarkMode ? 'bg-gray-800' : 'bg-[#fff8f1]'}`}>
-        <div className='w-full md:max-w-[90%] mx-auto'>
+      <section className={`border-b border-[#fa5d00] pt-20 md:pt-32 pb-20 ${isDarkMode ? 'bg-gray-800' : 'bg-[#fff8f1]'}`}>
+        <div className='max-w-[90%] mx-auto'>
           <div className="md:flex md:space-x-10 items-end">
             <div className="hero-img w-full md:1/2">
               <div>
@@ -48,12 +48,12 @@ export default function Index() {
               </div>
               <div className="py-3 pt-6">
                 <div className="flex space-x-3">
-                  <div className='w-full md:w-3/5'>
+                  <div className='w-[62%] md:w-3/5'>
                     <input type="text" placeholder='Your email address'
                       className='w-full bg-white border border-gray-100 px-4 rounded-xl w-full py-3'
                     />
                   </div>
-                  <div className='w-full md:w-2/5 '>
+                  <div className='w-[38%] md:w-2/5 '>
                     <PrimaryButton title="Get Started" />
                   </div>
                 </div>
