@@ -64,7 +64,7 @@ export default function Me() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'} py-32`}>
+            <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-[#fff8f1]'} py-32`}>
                 <div className='mx-auto max-w-[90%] '>
                     <div className="md:flex md:spaxe-x-10 md:items-center md:justify-evenly">
 
