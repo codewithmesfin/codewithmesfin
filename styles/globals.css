@@ -29,8 +29,19 @@ p {
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 15px !important;
+  font-size: 15px;
 }
+@media only screen and (max-width: 600px) {
+  .quote {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px !important;
+  }
+}
+
+
+
 
 .accordio-p {
   font-family: "MuotoTrial";
