@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { ThemeProvider, useTheme } from "@/context/themeContext";
 import PublicLayout from "@/components/public/layout";
-import GoTopButton from "@/components/goTopButton";
+import GoTopButton from "../components/goTopButton";
 
 export default function MyApp({ Component, pageProps }: any) {
   
