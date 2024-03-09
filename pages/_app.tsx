@@ -23,6 +23,7 @@ export default function MyApp({ Component, pageProps }: any) {
     }
   }, [isDarkMode])
 
+  
   return (
     <ThemeProvider>
       <PublicLayout>
