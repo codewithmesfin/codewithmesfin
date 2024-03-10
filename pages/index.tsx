@@ -17,7 +17,7 @@ export default function Index() {
   const [dismissableIndex, setDismissableIndex] = useState(0)
   return (
     <div>
-       <Head>
+      <Head>
         <title>Code with Mesfin</title>
         <meta
           name="description"
@@ -48,7 +48,7 @@ export default function Index() {
                   Dive into Code, <span
                     className='text-[#fa5d00] font-bold mesfin'>{"Mesfin's "}</span> Guidance
                 </h1>
-                <p className={`py-6 ${isDarkMode?'text-gray-200':'text-[18px]'}`}>
+                <p className={`py-6 ${isDarkMode ? 'text-gray-200' : 'text-[18px]'}`}>
                   You have been invited to an exciting voyage through the realm of coding.
                   With {"Mesfin's"} mentorship, {"you'll"} explore the depths of
                   programming languages and frameworks, gaining hands-on experience
@@ -91,11 +91,50 @@ export default function Index() {
           </p>
         </div>
       </section>
+      <section className={`${isDarkMode ? 'bg-gray-800' : 'bg-[#FEF8F2]'}`}>
+        <div className='mx-auto max-w-[90%] py-6'>
+          <div className='py-4 mx-auto w-[90%] md:max-w-4xl'>
+            <h1 className={`${isDarkMode ? 'text-white' : ''} text-center text-3xl md:text-6xl font-bold`}>
+              How<span className='text-[#fa5d00]'> Mesfin</span> helps
+            </h1>
+            <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-800'} text-lg md:text-3xl text-center py-3`}>
+              Book a 30 minutue quick meeting on {"Mesfin's"} Calender, discuss your topic(s) and decide your next action plans.
+            </p>
+          </div>
+          <div className='mx-auto max-w-[90%] py-6'>
+            <div className="md:flex items-center md:space-x-10">
+              <div className="w-full md:w-1/2">
+                <h2 className={`${isDarkMode ? 'text-gray-200' : 'text-gray-800'} text-lg md:text-3xl py-3`}>
+                 Set up your first meeting
+                </h2>
+                <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-800'} text-lg md:text-xl py-3`}>
+                  Ready to meet with Mesfin? Click the button below to access his
+                  Calendly and choose a time that works best for you.<br />
+                Once {"you've"} selected a date and time, {"you'll"} be all set for your meeting.
+                </p>
+                <div className="pt-3">
+                  <PrimaryLinkButton
+                  href="https://calendly.com/mesfin-tsegaye/codewithmesfin"
+                  title="Book a meeting"
+                  />
+                </div>
+              </div>
+              <div className="w-full md:w-1/2">
+                <img src="/images/calendly.png"
+                  alt=""
+                  className='w-full h-full md:shadow rounded'
+                />
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
 
       <section className={`${isDarkMode ? 'bg-gray-700' : 'bg-white'}`}>
         <div className='mx-auto max-w-[90%] py-6'>
           <div className='py-4'>
-            <h1 className={`${isDarkMode?'text-white':''} text-center text-3xl md:text-6xl font-bold`}>
+            <h1 className={`${isDarkMode ? 'text-white' : ''} text-center text-3xl md:text-6xl font-bold`}>
               Join Code with <span className='text-[#fa5d00]'> Mesfin</span>
             </h1>
             <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-800'} text-lg md:text-xl text-center py-3`}>
