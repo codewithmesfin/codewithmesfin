@@ -101,10 +101,10 @@ export default function Index() {
               Book a 30 minutue quick meeting on {"Mesfin's"} Calender, discuss your topic(s) and decide your next action plans.
             </p>
           </div>
-          <div className='mx-auto max-w-[90%] py-6'>
+          <div className='mx-auto max-w-[95%] md:py-6'>
             <div className="md:flex items-center md:space-x-10">
               <div className="w-full md:w-1/2">
-                <h2 className={`${isDarkMode ? 'text-gray-200' : 'text-gray-800'} text-lg md:text-3xl py-3`}>
+                <h2 className={`${isDarkMode ? 'text-gray-200' : 'text-gray-800'} text-3xl md:text-3xl py-3`}>
                  Set up your first meeting
                 </h2>
                 <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-800'} text-lg md:text-xl py-3`}>
@@ -119,7 +119,7 @@ export default function Index() {
                   />
                 </div>
               </div>
-              <div className="w-full md:w-1/2">
+              <div className="w-full md:w-1/2 mt-10 md:mt-1">
                 <img src="/images/calendly.png"
                   alt=""
                   className='w-full h-full md:shadow rounded'
