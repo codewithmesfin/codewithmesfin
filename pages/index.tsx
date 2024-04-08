@@ -2,8 +2,6 @@
 
 import EmailComponent from '@/components/emailComponent';
 import HelpCarousel from '@/components/helpCarousel';
-
-import PrimaryButton from '@/components/primaryButton'
 import PrimaryLinkButton from '@/components/primaryLinkButton';
 import ServiceCarousel from '@/components/serviceCarousel';
 import { useTheme } from '@/context/themeContext';
