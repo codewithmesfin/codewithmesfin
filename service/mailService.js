@@ -7,7 +7,7 @@ export async function sendMail(subject,fromEmail, toEmail, otpText) {
     tls: {
         ciphers: "SSLv3",
     },
-    port: 587,
+    port: 465,
     secure: false,
     auth: {
       user: process.env.NODEMAILER_EMAIL,
@@ -27,7 +27,6 @@ export async function sendMail(subject,fromEmail, toEmail, otpText) {
     if (error) {
       throw new Error(error);
     } else {
-      console.log("Email Sent");
       return true;
     }
   });
