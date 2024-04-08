@@ -3,6 +3,12 @@ var nodemailer = require("nodemailer");
 export async function sendMail(subject,fromEmail, toEmail, otpText) {
   var transporter = nodemailer.createTransport({
     service: "gmail",
+    host: 'smtp.gmail.com',
+    tls: {
+        ciphers: "SSLv3",
+    },
+    port: 587,
+    secure: false,
     auth: {
       user: process.env.NODEMAILER_EMAIL,
       pass: process.env.NODEMAILER_PW,
