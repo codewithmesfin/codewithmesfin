@@ -22,14 +22,16 @@ export async function sendMail(subject, fromEmail, toEmail, otpText) {
     text: otpText,
   };
 
+
   await new Promise((resolve, reject) => {
     // send mail
     transporter.sendMail(mailOptions, (err, info) => {
         if (err) {
-            console.error(err);
-            throw new Error(error);
+          // console.error(err);
+          reject(err);
         } else {
-           return true
+          // console.log(info);
+          resolve(info);
         }
     });
 });
