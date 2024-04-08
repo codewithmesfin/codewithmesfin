@@ -23,7 +23,7 @@ export async function sendMail(subject,fromEmail, toEmail, otpText) {
     text: otpText,
   };
 
-  transporter.sendMail(mailOptions, function (error, info) {
+ await transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
       throw new Error(error);
     } else {
