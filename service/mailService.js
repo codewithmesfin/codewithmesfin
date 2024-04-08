@@ -12,6 +12,8 @@ export async function sendMail(subject, fromEmail, toEmail, otpText) {
     },
   });
 
+  
+
   var mailOptions = {
     from: process.env.NODEMAILER_EMAIL,
     to: toEmail,
@@ -20,11 +22,17 @@ export async function sendMail(subject, fromEmail, toEmail, otpText) {
     text: otpText,
   };
 
-  await transporter.sendMail(mailOptions, function (error, info) {
-    if (error) {
-      throw new Error(error);
-    } else {
-      return true;
-    }
-  });
+  await new Promise((resolve, reject) => {
+    // send mail
+    transporter.sendMail(mailOptions, (err, info) => {
+        if (err) {
+            console.error(err);
+            throw new Error(error);
+        } else {
+           return true
+        }
+    });
+});
+
+
 }
