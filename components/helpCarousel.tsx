@@ -2,7 +2,7 @@
 import { useTheme } from '@/context/themeContext';
 import helps from '@/utils/helps';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 export default function HelpCarousel() {
     const { isDarkMode } = useTheme();
@@ -17,7 +17,7 @@ export default function HelpCarousel() {
                 <div className="md:flex items-center md:space-x-10">
                     <div className='w-full md:w-1/2'>
                         <img src={item.img} alt=""
-                        className='h-full w-full object-cover rounded-t-xl md:rounded-none md:rounded-l-xl'
+                        className='h-full w-full min-h-[350px] max-h-[400px] object-cover rounded-t-xl md:rounded-none md:rounded-l-xl'
                         />
                     </div>
                     <div className='w-full md:w-1/2 p-5 md:p-10'>
@@ -27,7 +27,8 @@ export default function HelpCarousel() {
                             <span className='italic text-[#FA5D00] text-2xl md:text-4xl font-extrabold'>{'\"'} </span>
                         </p>
                         <div className="pt-4">
-                        <Link href={"/learn-more"}
+                        <Link href={item.href}
+                        target='_blank'
                         className='text-[#FA5D00] text-lg'
                         >{item.link} </Link>
                         </div>

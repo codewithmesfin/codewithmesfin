@@ -1,9 +1,9 @@
 const helps:any=[
     {
-       text:'We really focus on work-life balance in remote work… Time tracking reveals if somebody is overburdened and that becomes an immediate conversation.',
-       img:'https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-zehner.jpg?width=1120&height=748&name=home-photo-zehner.jpg',
-       href:"/help1",
-       link:"Read more about Blockchain"
+       text:'Own your online world. Web3.0 with AI & Blockchain puts you in control of your digital data.',
+       img:'/images/web3.png',
+       href:"https://youtu.be/0tZFQs7qBfQ",
+       link:"Learn more about Web3.0"
     },
     {
         text:"We needed something that worked, something super simple, because we don’t want to have to teach people how to use it as part of onboarding.",

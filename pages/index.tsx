@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
+import EmailComponent from '@/components/emailComponent';
 import HelpCarousel from '@/components/helpCarousel';
 
 import PrimaryButton from '@/components/primaryButton'
@@ -28,8 +29,8 @@ export default function Index() {
       </Head>
       <section className={`border-b border-[#fa5d00] pt-20 md:pt-32 pb-20 ${isDarkMode ? 'bg-gray-800' : 'bg-[#fff8f1]'}`}>
         <div className='max-w-[90%] mx-auto'>
-          <div className="md:flex md:space-x-10 items-end">
-            <div className="hero-img w-full md:1/2">
+          <div className="md:flex md:justify-between md:space-x-10 items-end">
+            <div className="hero-img w-full md:3/5">
               <div>
                 <div className="flex space-x-2">
                   <svg className={`size-6 mt-6 ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}
@@ -57,24 +58,15 @@ export default function Index() {
 
               </div>
               <div className="py-3 pt-6">
-                <div className="flex space-x-3">
-                  <div className='w-[62%] md:w-3/5'>
-                    <input type="text" placeholder='Your email address'
-                      className='w-full bg-white border border-gray-100 px-4 rounded-xl w-full py-3'
-                    />
-                  </div>
-                  <div className='w-[38%] md:w-2/5 '>
-                    <PrimaryButton title="Get Started" />
-                  </div>
-                </div>
+                <EmailComponent/>
               </div>
             </div>
-            <div className="w-full h-full md:1/2">
+            <div className="w-full h-full md:2/5 flex justify-end">
               <Image
                 data-aos="fade-up"
                 data-aos-duration="500"
                 src="/images/mesfine.png" alt='logo' width={400} height={400}
-                className='rounded object-cover h-full w-full'
+                className='rounded object-contain h-full w-full'
               />
             </div>
           </div>
@@ -184,9 +176,13 @@ export default function Index() {
                 }
               </div>
               <div className="w-full md:w-1/2">
-                <img src="https://res.cloudinary.com/spiralyze/image/upload/f_auto/harvest/7009/time_tracking_10.webp"
+                {/* <img src="https://res.cloudinary.com/spiralyze/image/upload/f_auto/harvest/7009/time_tracking_10.webp"
                   alt=""
-                  className='w-full h-full '
+                  className='w-full h-full shadow'
+                /> */}
+                 <img src="/images/setup1.png"
+                  alt=""
+                  className='w-full h-full shadow rounded'
                 />
               </div>
             </div>
