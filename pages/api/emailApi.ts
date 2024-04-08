@@ -7,7 +7,7 @@ const handler = async (req: any, res: any) => {
       case "POST": {
         //Do some thing
         await sendMail(subject, from, to, message);
-        res.status(200).send("Success");
+        res.status(200).json({code:200,status:"Success",data:req.body});
         break;
       }
       case "GET": {
