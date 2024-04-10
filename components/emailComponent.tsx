@@ -3,6 +3,7 @@ import PrimaryButton from './primaryButton'
 import { Dialog, Transition } from '@headlessui/react'
 import axios from 'axios'
 import { toast } from 'react-toastify';
+import Icon from './icon';
 
 export default function EmailComponent() {
     const [loading, setLoading] = useState(false)
@@ -19,7 +20,7 @@ export default function EmailComponent() {
     }
 
     const submit = async () => {
-        if (message.email != ""  && message.name != "" && message.message != "") {
+        if (message.email != "" && message.name != "" && message.message != "") {
             setLoading(true)
             const payload = {
                 subject: `${message.name} - ${message.phone}`,
@@ -96,9 +97,16 @@ export default function EmailComponent() {
                                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                                     <Dialog.Title
                                         as="h3"
-                                        className="text-lg py-3 font-medium leading-6 text-gray-900"
+                                        className="flex items-center justify-between text-lg py-3 font-medium leading-6 text-gray-900"
                                     >
                                         Reach out Mesfin
+                                        <div>
+                                            <div
+                                            onClick={closeModal}
+                                            className='cursor-pointer text-red-600'>
+                                                <Icon path='close' w='6' h='6' radius='2' />
+                                            </div>
+                                        </div>
                                     </Dialog.Title>
                                     <form onSubmit={e => e.preventDefault()}>
                                         <div className="my-2">
