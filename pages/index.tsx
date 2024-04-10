@@ -240,9 +240,9 @@ export default function Index() {
                 </div>
               </div>
               <div className="w-full md:w-2/5">
-                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/footer-illo-comp.svg"
+                <img src="/images/option.png"
                   alt=""
-                  className='h-full w-full max-w-[380px] object-cover'
+                  className='h-full rounded w-full max-w-[380px] object-cover'
                 />
               </div>
             </div>

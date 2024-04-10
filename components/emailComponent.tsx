@@ -19,28 +19,33 @@ export default function EmailComponent() {
     }
 
     const submit = async () => {
-        setLoading(true)
-        const payload = {
-            subject: `${message.name} - ${message.phone}`,
-            from: message.email,
-            to: "sciemesfin55@gmail.com",
-            message: message.message
+        if (message.email != ""  && message.name != "" && message.message != "") {
+            setLoading(true)
+            const payload = {
+                subject: `${message.name} - ${message.phone}`,
+                from: message.email,
+                to: "sciemesfin55@gmail.com",
+                message: message.message
+            }
+            try {
+                await axios.post('/api/emailApi', {
+                    ...payload
+                });
+                toast.success('Message sent to Mesfin Successfully!', {
+                    position: "top-right",
+                });
+            } catch (error) {
+                toast.error('Unable to send message. Try again later.', {
+                    position: "top-right"
+                });
+            } finally {
+                closeModal()
+                setLoading(false)
+            }
         }
-        try {
-            await axios.post('/api/emailApi', {
-                ...payload
-            });
-            toast.success('Message sent to Mesfin Successfully!', {
-                position: "top-right",
-            });
-        } catch (error) {
-            toast.error('Unable to send message. Try again later.', {
-                position: "top-right"
-            });
-        } finally {
-            closeModal()
-            setLoading(false)
-        }
+
+
+
     }
 
     return (
@@ -60,7 +65,11 @@ export default function EmailComponent() {
                 </div>
             </div>
             <Transition appear show={isOpen} as={Fragment}>
-                <Dialog as="div" className="relative z-10" onClose={closeModal}>
+                <Dialog as="div" className="relative z-10"
+                    //  onClose={closeModal}
+                    static
+                    onClose={() => null}
+                >
                     <Transition.Child
                         as={Fragment}
                         enter="ease-out duration-300"
