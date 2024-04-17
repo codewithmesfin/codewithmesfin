@@ -5,9 +5,11 @@ import React from 'react'
 export default function PublicFooter() {
   const { isDarkMode } = useTheme();
   const links = [
-    { title: "About Mesfin", href: "/me" },
-    { title: "Services", href: "/services" },
-    { title: "Contact Mesfin", href: "/contact" }
+
+  { title: "About me", href: "/me" },
+  { title: "Experiences", href: "/experiences" },
+  { title: "Certifications", href: "/certifications" },
+  { title: "Articles", href: "https://codewithmesfin.medium.com", target: true },
   ]
 
   return (
@@ -22,6 +24,7 @@ export default function PublicFooter() {
         {
             links.map((x:any,i:number)=><li key={i}>
               <Link href={x.href}
+                target={x.target ? '_blank' : "_self"}
               className={`hover:underline me-4 md:me-6 ${isDarkMode?'text-gray-200':'text-gray-500'}`}
               >
               {x.title}
