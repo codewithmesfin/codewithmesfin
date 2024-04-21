@@ -60,9 +60,8 @@ export default function Icon({
     plus:"M12 4.5v15m7.5-7.5h-15",
     show:"M15 15l6-6m0 0l-6-6m6 6H9a6 6 0 000 12h3",
     leftQuote:"M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z",
-    close:"M6 18 18 6M6 6l12 12"
-    
-
+    close:"M6 18 18 6M6 6l12 12",
+    test:""
   };
 
   const width = w ? `w-${w}` : 'w-3'
