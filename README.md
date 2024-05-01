@@ -1,7 +1,7 @@
 
 
-### Hi  
-# My name is Mesfin Tsegaye
+### Hi, my name is
+# Mesfin Tsegaye
 ### I am a Full-stack developer 👨‍💻 working remotely since 2019 🚀  
   
 
