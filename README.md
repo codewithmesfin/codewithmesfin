@@ -1,8 +1,6 @@
-<div align="center">
-<img src="https://media.licdn.com/dms/image/C4D03AQF-7yLTgTce7A/profile-displayphoto-shrink_800_800/0/1607362876550?e=1720051200&v=beta&t=fj2C6VB3sLROROu85TplDKc8wbPucW0o-xLxW03D_RU" align="center" style="width: 100%" />
-</div>  
-  
 
+
+### Hi  
 ### <div align="center">I'm Mesfin Tsegaye, a full-stack developer 👨‍💻 working remotely since 2019 🚀</div>  
   
 
