@@ -126,5 +126,3 @@ I have mastered smart contract, blockchain, cryptocurrency, DeFi, dApp, DAOs, an
 
 <br />
 
-----
-<div align="center">Generated using <a href="https://profilinator.rishav.dev/" target="_blank">Github Profilinator</a></div>
