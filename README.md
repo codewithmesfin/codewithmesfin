@@ -1,7 +1,7 @@
 
 
 ### Hi  
-### <div align="center">I'm Mesfin Tsegaye, a full-stack developer 👨‍💻 working remotely since 2019 🚀</div>  
+### I'm Mesfin Tsegaye, a full-stack developer 👨‍💻 working remotely since 2019 🚀  
   
 
 - 🔭 I’m currently working on [Enterprise Resource Planning Software](https://prosync.site) for TechEthio IT Solution plc.  
