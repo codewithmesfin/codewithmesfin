@@ -1,8 +1,8 @@
 
 
-### Hi, my name is
+### Hi, my name is 
 # Mesfin Tsegaye
-### I am a Full-stack developer 👨‍💻 working remotely since 2019 🚀  
+### I'm a Full-stack developer 👨‍💻 working remotely since 2019 🚀  
   
 
 - 🔭 I’m currently working on [Enterprise Resource Planning Software](https://prosync.site) for TechEthio IT Solution plc.  
@@ -102,10 +102,10 @@ I have mastered smart contract, blockchain, cryptocurrency, DeFi, dApp, DAOs, an
 <a href="https://instagram.com/codewithmesfin" target="_blank">
 <img src=https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white alt=instagram style="margin-bottom: 5px;" />
 </a>
-<a href="https://medium.com/codewithmesfin" target="_blank">
+<a href="https://medium.com/@codewithmesfin" target="_blank">
 <img src=https://img.shields.io/badge/medium-%23292929.svg?&style=for-the-badge&logo=medium&logoColor=white alt=medium style="margin-bottom: 5px;" />
 </a>
-<a href="https://www.youtube.com/user/codewithmesfin" target="_blank">
+<a href="https://www.youtube.com/@codewithmesfin" target="_blank">
 <img src=https://img.shields.io/badge/youtube-%23EE4831.svg?&style=for-the-badge&logo=youtube&logoColor=white alt=youtube style="margin-bottom: 5px;" />
 </a>  
 </div>  
@@ -120,4 +120,3 @@ I have mastered smart contract, blockchain, cryptocurrency, DeFi, dApp, DAOs, an
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=codewithmesfin&hide_border=true&layout=compact" align="left" />  
 
 <br/>  
-
