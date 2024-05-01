@@ -28,8 +28,8 @@ export default function Me() {
         },
         {
             title: "Linkedin",
-            value: "mesfin-tsegaye",
-            href: "https://www.linkedin.com/in/mesfin-tsegaye",
+            value: "codewithmesfin",
+            href: "https://www.linkedin.com/in/codewithmesfin",
         },
         {
             title: "Github",
