@@ -23,6 +23,7 @@ const links = [
   { title: "About me", href: "/me" },
   { title: "Experiences", href: "/experiences" },
   { title: "Certifications", href: "/certifications" },
+  { title: "Services", href: "/services" },
   { title: "Articles", href: "https://codewithmesfin.medium.com", target: true },
 ]
 

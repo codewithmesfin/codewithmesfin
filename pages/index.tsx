@@ -239,7 +239,7 @@ export default function Index() {
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-2/5">
+              <div className="w-full md:w-2/5 py-6 md:py-1">
                 <img src="/images/option.png"
                   alt=""
                   className='h-full rounded w-full max-w-[380px] object-cover'

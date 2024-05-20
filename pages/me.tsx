@@ -83,20 +83,18 @@ export default function Me() {
                                 Hi, my name is <br className='hidden md:block' />
                                 <span className={isDarkMode ? 'text-[#fa5d00]' : 'text-[#fa5d00]'}>Mesfin Tsegaye</span>
                             </h1>
-                            
-                            <h2 className={`mt-5 flex text-xl md:text-3xl space-x-2 font-bold ${isDarkMode?'text-gray-200':''}`}>
+
+                            <h2 className={`mt-5 flex text-xl md:text-3xl space-x-2 font-bold ${isDarkMode ? 'text-gray-200' : ''}`}>
                                 <span className={isDarkMode ? 'text-white' : 'text-gray-500'}> I am </span>
                                 <TypeWriiter roles={roles} />
                             </h2>
                             <p className={`${isDarkMode ? 'text-gray-200' : ''} pt-6 py-2`}>
-                                Passionate full-stack developer with over five years of industry
-                                expertise, specializing in remote-based roles across multiple global
-                                locations. Skilled in FinTech, transportation, ecommerce, schools,
-                                AI, and human resources. Mastered Web3 and eager to contribute to
-                                Web3 and blockchain projects. Committed to continuous learning,
-                                problem-solving, and delivering optimal outcomes. Successfully
-                                improved project efficiency by 20% through innovative solutions.
-                                Ready to make a significant impact as a valuable asset to any team.
+                                Senior Software Engineer with 5+ years of experience crafting
+                                innovative solutions across Frontend, Backend, and Mobile development.
+                                Proven ability to lead software engineering teams and deliver
+                                high-quality, scalable applications. Possesses a strong foundation
+                                in Machine Learning, Generative AI, and Blockchain(Web3.0), eager to leverage these skills
+                                for future projects.
                             </p>
                             <div className="mt-2">
                                 <h1 className={`${isDarkMode ? 'text-white' : 'text-gray-700'} text-lg md:text-3xl pt-4 pb-1`}>Get in touch</h1>
