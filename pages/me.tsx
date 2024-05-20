@@ -73,13 +73,15 @@ export default function Me() {
                                 data-aos="fade-up"
                                 data-aos-duration="500"
                                 src="/images/mesfin.png" alt='logo' width={400} height={400}
-                                className='rounded object-cover w-full h-full md:shadow-xl'
+                                className='rounded object-cover w-full h-full'
                             />
                         </div>
 
 
                         <div className='w-full md:w-[50%] h-full mt-10 md:mt-1'>
-                            <h1 className={`leading-10 font-extrabold ${isDarkMode ? 'text-white' : 'text-gray-900'} text-xl md:text-6xl`}>
+                            <h1
+                                style={{ lineHeight: "1.3" }}
+                                className={`leading-10 font-extrabold ${isDarkMode ? 'text-white' : 'text-gray-900'} text-xl md:text-6xl`}>
                                 Hi, my name is <br className='hidden md:block' />
                                 <span className={isDarkMode ? 'text-[#fa5d00]' : 'text-[#fa5d00]'}>Mesfin Tsegaye</span>
                             </h1>
@@ -88,7 +90,7 @@ export default function Me() {
                                 <span className={isDarkMode ? 'text-white' : 'text-gray-500'}> I am </span>
                                 <TypeWriiter roles={roles} />
                             </h2>
-                            <p className={`${isDarkMode ? 'text-gray-200' : ''} pt-6 py-2`}>
+                            <p className={`${isDarkMode ? 'text-gray-200' : 'pt-6 py-2'}`}>
                                 Senior Software Engineer with 5+ years of experience crafting
                                 innovative solutions across Frontend, Backend, and Mobile development.
                                 Proven ability to lead software engineering teams and deliver
@@ -97,7 +99,7 @@ export default function Me() {
                                 for future projects.
                             </p>
                             <div className="mt-2">
-                                <h1 className={`${isDarkMode ? 'text-white' : 'text-gray-700'} text-lg md:text-3xl pt-4 pb-1`}>Get in touch</h1>
+                                <h1 className={`${isDarkMode ? 'text-white' : 'text-gray-700'} font-semibold text-lg md:text-2xl pt-4 pb-1`}>Get in touch</h1>
                                 <div className='grid grid-cols-1 md:grid-cols-2 gap-2 mt-2'>
                                     {
                                         socials.map((x: any, i: number) => <div key={i}>
