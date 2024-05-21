@@ -17,13 +17,13 @@ export default function Experiences() {
             startDate: "November, 2022",
             endDate: "active",
             description: [
+                `Tailoring Frappe Core and ERPNext for Ethiopian SMEs: I'm customizing these open-source platforms to deliver affordable enterprise solutions for Ethiopian businesses of all sizes, helping them automate their processes and achieve growth.`,
+                `Built a user-friendly laundry marketplace app with Flutter and Firebase. Includes separate apps for laundry owners, clients, and drivers for a seamless laundry experience.`,
                 `Managed a team and developed an advanced Enterprise Resource Planning (ERP) project for Kenema
-      Pharmacies Enterprise. Utilized Next.js, Node.js, GraphQL, TypeScript, Redis, PostgreSQL, and
-      Firebase, resulting in optimizing operations and improving efficiency across 45 branches.`,
-                `Created ShareGebeya, a comprehensive marketplace platform available on iOS, Android, and web,
-      facilitating share listing, selling, and buying activities in Ethiopia.`,
-                `Developed and deployed EtyopAI, an AI system utilizing ChatGPT models, to provide OpenAI Services
-      in Africa.`,
+                Pharmacies Enterprise. Utilized Python, Frappe, Jinja, Nodejs, MariaDb, Reddis, and JavaScript resulting in optimizing operations and improving efficiency across 43 branches.`,
+                `Worked as a Full stack developer and team leader on Platonic project. Platonic is a co-parenting management project with Mobile apps for Android and iPhone developed in Flutter, and a n admin panel developed with Next js and Typescript. The backend is developed using Nodejs, AWS Server-less, and DynamoDb`,
+                `Developed Etyop, a marketplace app, and Sharegebeya, an Ethiopian investment share trading app, using React Native and Expo for a smooth user experience and Nodejs and PostgreSQL for the backend.`
+                ,
             ],
         },
         {
@@ -167,14 +167,12 @@ export default function Experiences() {
                             <div className="py-3">
                                 <h1 className={`text-3xl py-2 md:text-4xl font-extrabold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Bio</h1>
                                 <p className={isDarkMode ? 'text-gray-300' : ''}>
-                                    Passionate full-stack developer with over five years of industry
-                                    expertise, specializing in remote-based roles across multiple global
-                                    locations. Skilled in FinTech, transportation, ecommerce, schools,
-                                    AI, and human resources. Mastered Web3 and eager to contribute to
-                                    Web3 and blockchain projects. Committed to continuous learning,
-                                    problem-solving, and delivering optimal outcomes. Successfully
-                                    improved project efficiency by 20% through innovative solutions.
-                                    Ready to make a significant impact as a valuable asset to any team.
+                                    Senior Software Engineer with 5+ years of experience crafting
+                                    innovative solutions across Frontend, Backend, and Mobile development.
+                                    Proven ability to lead software engineering teams and deliver
+                                    high-quality, scalable applications. Possesses a strong foundation
+                                    in Machine Learning, Generative AI, and Blockchain(Web3.0), eager to leverage these skills
+                                    for future projects.
                                 </p>
                                 <h1 className={`mt-5 mb-2 font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'} text-xl md:text-2xl`}>
                                     Companies I worked for
