@@ -5,7 +5,7 @@
 ### I'm a Full-stack developer 👨‍💻 working remotely since 2019 🚀  
   
 
-- 🔭 I’m currently working on [Enterprise Resource Planning Software](https://prosync.site) for TechEthio IT Solution plc.  
+- 🔭 I’m currently working on [Software as a Service Project](https://mevinai.et) for Mevinai PLC.  
   
 
 - 🌱 I’m currently learning Machine Learning and Data Science  
