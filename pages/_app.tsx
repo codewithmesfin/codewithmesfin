@@ -9,7 +9,6 @@ import { useEffect } from "react";
 import { ThemeProvider, useTheme } from "@/context/themeContext";
 import PublicLayout from "@/components/public/layout";
 import ScrollTopButton from "@/components/scrrollTopButton";
-import Script from "next/script";
 
 export default function MyApp({ Component, pageProps }: any) {
   const { isDarkMode } = useTheme();
@@ -26,13 +25,6 @@ export default function MyApp({ Component, pageProps }: any) {
   return (
     <ThemeProvider>
       {/* ✅ Add Google AdSense Script Here */}
-      <Script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5828433625810537"
-        crossOrigin="anonymous"
-        strategy="afterInteractive"
-      />
-
       <PublicLayout>
         <Component {...pageProps} />
         <ToastContainer />

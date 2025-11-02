@@ -23,6 +23,7 @@ export default function Index() {
           content="Mesfin, a Software Engineer, delights in crafting innovative mobile and web systems loved by users. With expertise in AI, Web3.0, Agile, and frontend/backend development, Mesfin offers mentorship and a friendly approach."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-adsense-account" content="ca-pub-5828433625810537"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className={`border-b border-[#fa5d00] pt-20 md:pt-32 pb-20 ${isDarkMode ? 'bg-gray-800' : 'bg-[#fff8f1]'}`}>
